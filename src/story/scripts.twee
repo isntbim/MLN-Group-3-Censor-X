@@ -1,6 +1,12 @@
 :: UserScript [script]
 
-Config.saves.session = false;
+// Clear session storage on reload to restart the game fresh
+try {
+  sessionStorage.clear();
+} catch (e) {
+  console.error("Could not clear sessionStorage:", e);
+}
+
 window.setup = setup;
 
 /* ===== THEME MANAGEMENT ===== */

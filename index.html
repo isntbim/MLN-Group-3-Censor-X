@@ -1055,7 +1055,7 @@ a:hover { text-decoration: none; color: var(--accent-red); }
 /* ============================================================
    AUTO-GENERATED — DO NOT EDIT MANUALLY
    Source: question_data/act1.json, question_data/act3.json
-   Generated: 2026-05-22T16:16:11.533Z
+   Generated: 2026-05-22T16:18:06.975Z
    ============================================================ */
 
 setup.act1Comments = [
@@ -1212,7 +1212,13 @@ setup.act3Comments = [
   }
 ];
 /* twine-user-script #2: "UserScript" */
-Config.saves.session = false;
+// Clear session storage on reload to restart the game fresh
+try {
+  sessionStorage.clear();
+} catch (e) {
+  console.error("Could not clear sessionStorage:", e);
+}
+
 window.setup = setup;
 
 /* ===== THEME MANAGEMENT ===== */
