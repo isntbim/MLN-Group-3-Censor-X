@@ -1055,7 +1055,7 @@ a:hover { text-decoration: none; color: var(--accent-red); }
 /* ============================================================
    AUTO-GENERATED — DO NOT EDIT MANUALLY
    Source: question_data/act1.json, question_data/act3.json
-   Generated: 2026-05-22T16:02:51.814Z
+   Generated: 2026-05-22T16:16:11.533Z
    ============================================================ */
 
 setup.act1Comments = [
@@ -1212,6 +1212,7 @@ setup.act3Comments = [
   }
 ];
 /* twine-user-script #2: "UserScript" */
+Config.saves.session = false;
 window.setup = setup;
 
 /* ===== THEME MANAGEMENT ===== */
@@ -1619,7 +1620,7 @@ setup.updateHUD = function() {
 &lt;&lt;set $shuffledAct1 to clone(setup.act1Comments)&gt;&gt;
 &lt;&lt;run setup.shuffleArray($shuffledAct1)&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="PassageHeader" tags="" position="350,225" size="100,100">&lt;&lt;if $gamePhase is &quot;act1&quot; or $gamePhase is &quot;act2&quot; or $gamePhase is &quot;act3&quot;&gt;&gt;\
 &lt;div class=&quot;hud&quot;&gt;
-  &lt;div class=&quot;hud-logo&quot;&gt;CENSOR-X&lt;/div&gt;
+  &lt;div class=&quot;hud-logo&quot;&gt;&lt;&lt;link &quot;CENSOR-X&quot; &quot;Start&quot;&gt;&gt;&lt;&lt;set $gamePhase to &quot;intro&quot;&gt;&gt;&lt;&lt;set $publicTrust to 100&gt;&gt;&lt;&lt;set $practiceMeter to 0&gt;&gt;&lt;&lt;set $prevPublicTrust to 100&gt;&gt;&lt;&lt;set $prevPracticeMeter to 0&gt;&gt;&lt;&lt;set $turn to 0&gt;&gt;&lt;&lt;set $act3Turn to 0&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;
   &lt;button class=&quot;theme-toggle&quot; onclick=&quot;window.setup.toggleTheme()&quot;&gt;◐&lt;/button&gt;
   &lt;div class=&quot;hud-stats&quot;&gt;
 &lt;&lt;if $gamePhase is &quot;act3&quot;&gt;&gt;\

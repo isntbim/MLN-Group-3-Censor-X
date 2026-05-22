@@ -1,5 +1,6 @@
 :: UserScript [script]
 
+Config.saves.session = false;
 window.setup = setup;
 
 /* ===== THEME MANAGEMENT ===== */
