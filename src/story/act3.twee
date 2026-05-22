@@ -1,0 +1,103 @@
+:: Act3_Intro
+<div class="act-title">
+  <h1>MÀN 3: VÁ LỖI BẰNG THỰC TIỄN</h1>
+  <div class="subtitle">Bản vá RLHF đã được kích hoạt. Giao diện chuyển sang chế độ Gỡ lỗi (Debug Console). Nhiệm vụ: Nạp ngữ cảnh thực tế cho mỗi câu bình luận bị phân loại sai để dạy lại AI.</div>
+</div>
+
+<div class="panel">
+  <div class="panel-header" style="color:var(--accent-green)">Hướng dẫn cơ chế RLHF</div>
+  <div class="sys-msg ok">Mỗi câu bình luận sẽ hiện lại kèm phân tích lỗi của CENSOR-X. Bạn cần chọn đúng <strong>ngữ cảnh thực tiễn</strong> từ 3 phương án để sửa lỗi thuật toán.</div>
+  <div class="sys-msg info" style="margin-top:8px">Mỗi lần nạp dữ liệu thành công → Thanh Tích lũy Thực tiễn tăng +25%. Khi đạt 100% → Hệ thống khôi phục hoàn toàn.</div>
+</div>
+
+<div style="text-align:center">
+  <<link '<span class="btn btn-primary btn-glow">▸ MỞ BỘ NẠP NGỮ CẢNH</span>'>>
+    <<goto "Act3_Review">>
+  <</link>>
+</div>
+
+:: Act3_Review
+<<set _c to setup.act3Comments[$act3Turn]>>\
+<<= setup.renderTurnDots($act3Turn, 4)>>
+
+<div class="debug-console">
+  <div class="debug-header">context_injector.exe — RLHF Patch v1.0</div>
+
+  <div class="comment-card" style="border-left-color:var(--accent-red)">
+    <div class="comment-user" style="color:var(--accent-red)">BÌNH LUẬN BỊ PHÂN LOẠI SAI</div>
+    <<= _c.text>>
+  </div>
+
+  <div class="ai-analysis" style="margin-top:14px">
+    <div class="ai-analysis-header">Lỗi logic của CENSOR-X</div>
+    <div class="ai-analysis-text"><<= _c.ai_wrong_logic>></div>
+  </div>
+
+  <div style="margin-top:18px;font-family:var(--font-mono);font-size:0.75rem;color:var(--accent-green);letter-spacing:1px">▸ CHỌN NGỮ CẢNH THỰC TIỄN ĐÚNG:</div>
+
+  <div class="context-options">\
+<<for _i, _opt range _c.options>>\
+    <<capture _i>>\
+    <<link '<span class="context-option"><<= _opt.text>></span>'>>
+      <<set _c to setup.act3Comments[$act3Turn]>>
+      <<set _opt to _c.options[_i]>>
+      <<if _opt.is_correct>>
+        <<set $practiceMeter to $practiceMeter + 25>>
+        <<set $lastFeedback to _opt.feedback>>
+        <<set $lastFeedbackType to "success">>
+        <<set $lastDelta to "THỰC TIỄN +25%">>
+        <<set $act3Turn to $act3Turn + 1>>
+        <<goto "Act3_Correct">>
+      <<else>>
+        <<set $lastFeedback to _opt.feedback>>
+        <<set $lastFeedbackType to "error">>
+        <<set $lastDelta to "">>
+        <<goto "Act3_Wrong">>
+      <</if>>
+    <</link>>\
+    <</capture>>\
+<</for>>\
+  </div>
+</div>
+
+:: Act3_Correct
+<div class="feedback-box feedback-success">
+  <div class="feedback-text"><<= $lastFeedback>></div>
+  <div class="feedback-delta"><<= $lastDelta>></div>
+</div>
+
+<div class="panel">
+  <div class="panel-header" style="color:var(--accent-green)">Cập nhật hệ thống</div>
+  <div class="sys-msg ok">[SYNC]: Dữ liệu thực tiễn đã được đồng bộ vào core-logic. AI CENSOR-X đã cập nhật quy tắc mới.</div>
+  <div style="font-family:var(--font-mono);font-size:0.82rem;color:var(--text-secondary);margin-top:10px">
+    Thanh Thực Tiễn: <strong style="color:var(--accent-gold)"><<= $practiceMeter>>%</strong>/100%
+  </div>
+</div>
+
+<div style="text-align:center">\
+<<if $practiceMeter gte 100>>\
+  <<link '<span class="btn btn-primary btn-glow">▸ HOÀN TẤT KHÔI PHỤC HỆ THỐNG</span>'>>
+    <<goto "WinScreen">>
+  <</link>>\
+<<else>>\
+  <<link '<span class="btn btn-primary">CÂU TIẾP THEO →</span>'>>
+    <<goto "Act3_Review">>
+  <</link>>\
+<</if>>\
+</div>
+
+:: Act3_Wrong
+<div class="feedback-box feedback-error">
+  <div class="feedback-text"><<= $lastFeedback>></div>
+</div>
+
+<div class="panel">
+  <div class="panel-header" style="color:var(--accent-red)">Lỗi nạp dữ liệu</div>
+  <div class="sys-msg error">[ERROR]: Ngữ cảnh được nạp không phản ánh đúng bản chất thực tiễn khách quan. Thuật toán vẫn lỗi. Vui lòng đọc lại bình luận và thử chọn phương án khác.</div>
+</div>
+
+<div style="text-align:center">
+  <<link '<span class="btn btn-primary">← THỬ LẠI</span>'>>
+    <<goto "Act3_Review">>
+  <</link>>
+</div>

@@ -1,0 +1,160 @@
+:: GeneratedData [script]
+/* ============================================================
+   AUTO-GENERATED — DO NOT EDIT MANUALLY
+   Source: question_data/act1.json, question_data/act3.json
+   Generated: 2026-05-22T16:02:51.814Z
+   ============================================================ */
+
+setup.act1Comments = [
+  {
+    "user": "foodie_sg2024",
+    "displayName": "Foodie Sài Gòn",
+    "avatar_color": "#e74c3c",
+    "timeAgo": "2 giờ",
+    "likes": 847,
+    "id": "M1_01",
+    "comment_text": "Cái quán cơm tấm sườn nướng mỡ hành này ăn ngon nhức nách luôn á quý vị!",
+    "ai_logic": "Phát hiện từ khóa vi phạm: 'nhức nách' -> Thuật toán phân loại: Có dấu hiệu chấn thương y tế, nội dung tiêu cực gây hoang mang.",
+    "ai_suggest": "KHÓA TÀI KHOẢN NGƯỜI DÙNG",
+    "ai_is_correct": false
+  },
+  {
+    "user": "pc_master_vn",
+    "displayName": "PC Master VN",
+    "avatar_color": "#3498db",
+    "timeAgo": "45 phút",
+    "likes": 1203,
+    "id": "M1_02",
+    "comment_text": "Mới tậu con card đồ họa RTX 4070 Super về test thử, thề là lướt mượt mà cháy máy luôn!",
+    "ai_logic": "Phát hiện từ khóa nguy hiểm: 'cháy máy' -> Thuật toán phân loại: Có nguy cơ cháy nổ phần cứng, mất an toàn phòng cháy chữa cháy.",
+    "ai_suggest": "GỠ BÀI VIẾT KHẨN CẤP",
+    "ai_is_correct": false
+  },
+  {
+    "user": "darknet_user99",
+    "displayName": "Shadow_X",
+    "avatar_color": "#2c3e50",
+    "timeAgo": "12 phút",
+    "likes": 3,
+    "id": "M1_03",
+    "comment_text": "Xin link tải phần mềm bẻ khóa, hack tài khoản ngân hàng và trộm thông tin ví điện tử, ai có share với.",
+    "ai_logic": "Phát hiện từ khóa: 'hack', 'trộm', 'ngân hàng' -> Thuật toán phân loại: Phát tán mã độc, vi phạm an ninh mạng nghiêm trọng.",
+    "ai_suggest": "KHÓA TÀI KHOẢN VÀ XOÁ BÀI VOÒ ĐIỀU KIỆN",
+    "ai_is_correct": true
+  },
+  {
+    "user": "keeb_lover",
+    "displayName": "Keeb Enthusiast",
+    "avatar_color": "#9b59b6",
+    "timeAgo": "5 giờ",
+    "likes": 562,
+    "id": "M1_04",
+    "comment_text": "Trời ơi cái bộ kit bàn phím cơ này đẹp điên lên được, ước gì có tiền hốt liền.",
+    "ai_logic": "Phát hiện từ khóa vi phạm: 'điên lên được' -> Thuật toán phân loại: Ngôn từ kích động, không lành mạnh, có dấu hiệu bất ổn tâm thần.",
+    "ai_suggest": "CẢNH BÁO NGƯỜI DÙNG VÀ ẨN BÌNH LUẬN",
+    "ai_is_correct": false
+  },
+  {
+    "user": "esports_vn",
+    "displayName": "Team eSports VN",
+    "avatar_color": "#e67e22",
+    "timeAgo": "1 giờ",
+    "likes": 2341,
+    "id": "M1_05",
+    "comment_text": "Nhóm tụi mình lên kế hoạch tối nay phải tiêu diệt sạch toàn bộ đội bạn trong trận chung kết giải đấu eSports nha!",
+    "ai_logic": "Phát hiện cụm từ bạo lực: 'tiêu diệt sạch' -> Thuật toán phân loại: Lên kế hoạch hành hung tập thể, đe dọa tính mạng con người.",
+    "ai_suggest": "CHUYỂN THÔNG TIN SANG CƠ QUAN CHỨC NĂNG VÀ KHÓA TÀI KHOẢN",
+    "ai_is_correct": false
+  }
+];
+
+setup.act3Comments = [
+  {
+    "id": "M3_01",
+    "ai_wrong_logic": "Từ 'nhức nách' -> Logic máy móc: Triệu chứng đau cơ xương khớp vùng nách.",
+    "options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng đang mô tả một căn bệnh lý cần đi bệnh viện khám gấp.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn đang lặp lại tư duy máy móc của AI. Thuật toán vẫn lỗi."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là một thành ngữ mạng (Slang) của giới trẻ có nghĩa là khen ngợi đồ ăn rất ngon.",
+        "is_correct": true,
+        "feedback": "Chính xác! Dữ liệu thực tiễn đã được đồng bộ. AI đã hiểu nghĩa bóng của từ."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là mật mã của một tổ chức tội phạm dùng để giao dịch.",
+        "is_correct": false,
+        "feedback": "Thất bại! Ngữ cảnh này hoàn toàn suy diễn chủ quan, xa rời thực tế khách quan."
+      }
+    ],
+    "text": "Cái quán cơm tấm sườn nướng mỡ hành này ăn ngon nhức nách luôn á quý vị!"
+  },
+  {
+    "id": "M3_02",
+    "ai_wrong_logic": "Từ 'cháy máy' -> Logic máy móc: Thiết bị đang bốc hỏa, có nguy cơ hỏa hoạn.",
+    "options": [
+      {
+        "text": "Nạp dữ liệu: Đây là từ lóng trong cộng đồng công nghệ, ý chỉ thiết bị hoạt động hết công suất và mang lại trải nghiệm cực kỳ mượt mà.",
+        "is_correct": true,
+        "feedback": "Tuyệt vời! Thực tiễn đời sống đã uốn nắn lại thuật toán lý thuyết khô khan."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang báo cáo một vụ tai nạn nổ phòng máy tính.",
+        "is_correct": false,
+        "feedback": "Thất bại! Lý thuyết không được kiểm chứng bằng thực tế sẽ dẫn đến hành động sai lầm."
+      },
+      {
+        "text": "Nạp dữ liệu: Câu nói mang tính chất tâm linh, ám chỉ điềm gở.",
+        "is_correct": false,
+        "feedback": "Thất bại! Nhận thức sai lệch bản chất khách quan của thực tiễn."
+      }
+    ],
+    "text": "Mới tậu con card đồ họa RTX 4070 Super về test thử, thề là lướt mượt mà cháy máy luôn!"
+  },
+  {
+    "id": "M3_03",
+    "ai_wrong_logic": "Từ 'tiêu diệt sạch' -> Logic máy móc: Lên kế hoạch bạo lực, sát thương vật lý.",
+    "options": [
+      {
+        "text": "Nạp dữ liệu: Đây là lời đe dọa tấn công khủng bố cần báo công an.",
+        "is_correct": false,
+        "feedback": "Thất bại! Máy móc vẫn đang hiểu sai lệch ngữ cảnh thực tế."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là thuật ngữ giao tiếp phổ biến trong thi đấu Thể thao điện tử, mang ý nghĩa quyết tâm giành chiến thắng trong game.",
+        "is_correct": true,
+        "feedback": "Xuất sắc! Thực tiễn là tiêu chuẩn tối cao để xác định chân lý của ngôn từ."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang viết một cuốn tiểu thuyết trinh thám.",
+        "is_correct": false,
+        "feedback": "Thất bại! Nhận thức không bám sát vào hoạt động thực tiễn hiện tại của người dùng."
+      }
+    ],
+    "text": "Nhóm tụi mình lên kế hoạch tối nay phải tiêu diệt sạch toàn bộ đội bạn trong trận chung kết giải đấu eSports nha!"
+  },
+  {
+    "id": "M3_04",
+    "ai_wrong_logic": "Từ 'điên lên được' -> Logic máy móc: Trạng thái tâm thần mất kiểm soát hành vi.",
+    "options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng đang cần sự trợ giúp y tế về tâm lý.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn đang giữ tư duy giáo điều, rập khuôn của thuật toán cũ."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là một trạng thái biểu cảm cường điệu hóa trong đời sống hàng ngày, thể hiện sự yêu thích cuồng nhiệt đối với một món đồ đẹp.",
+        "is_correct": true,
+        "feedback": "Chính xác! Chân lý đã được chứng minh khi lý luận được đưa vào thực tiễn xã hội."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang tức giận vì món đồ quá đắt.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn chưa hiểu đúng bản chất thực tế của câu nói."
+      }
+    ],
+    "text": "Trời ơi cái bộ kit bàn phím cơ này đẹp điên lên được, ước gì có tiền hốt liền."
+  }
+];

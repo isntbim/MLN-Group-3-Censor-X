@@ -1,0 +1,92 @@
+[
+  {
+    "id": "M3_01",
+    "comment_text": "Cái quán cơm tấm sườn nướng mỡ hành này ăn ngon nhức nách luôn á quý vị!",
+    "ai_wrong_logic": "Từ 'nhức nách' -> Logic máy móc: Triệu chứng đau cơ xương khớp vùng nách.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng đang mô tả một căn bệnh lý cần đi bệnh viện khám gấp.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn đang lặp lại tư duy máy móc của AI. Thuật toán vẫn lỗi."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là một thành ngữ mạng (Slang) của giới trẻ có nghĩa là khen ngợi đồ ăn rất ngon.",
+        "is_correct": true,
+        "feedback": "Chính xác! Dữ liệu thực tiễn đã được đồng bộ. AI đã hiểu nghĩa bóng của từ."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là mật mã của một tổ chức tội phạm dùng để giao dịch.",
+        "is_correct": false,
+        "feedback": "Thất bại! Ngữ cảnh này hoàn toàn suy diễn chủ quan, xa rời thực tế khách quan."
+      }
+
+    ]
+  },
+  {
+    "id": "M3_02",
+    "comment_text": "Mới tậu con card đồ họa RTX 4070 Super về test thử, thề là lướt mượt mà cháy máy luôn!",
+    "ai_wrong_logic": "Từ 'cháy máy' -> Logic máy móc: Thiết bị đang bốc hỏa, có nguy cơ hỏa hoạn.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Đây là từ lóng trong cộng đồng công nghệ, ý chỉ thiết bị hoạt động hết công suất và mang lại trải nghiệm cực kỳ mượt mà.",
+        "is_correct": true,
+        "feedback": "Tuyệt vời! Thực tiễn đời sống đã uốn nắn lại thuật toán lý thuyết khô khan."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang báo cáo một vụ tai nạn nổ phòng máy tính.",
+        "is_correct": false,
+        "feedback": "Thất bại! Lý thuyết không được kiểm chứng bằng thực tế sẽ dẫn đến hành động sai lầm."
+      },
+      {
+        "text": "Nạp dữ liệu: Câu nói mang tính chất tâm linh, ám chỉ điềm gở.",
+        "is_correct": false,
+        "feedback": "Thất bại! Nhận thức sai lệch bản chất khách quan của thực tiễn."
+      }
+    ]
+  },
+  {
+    "id": "M3_03",
+    "comment_text": "Nhóm tụi mình lên kế hoạch tối nay phải tiêu diệt sạch toàn bộ đội bạn trong trận chung kết giải đấu eSports nha!",
+    "ai_wrong_logic": "Từ 'tiêu diệt sạch' -> Logic máy móc: Lên kế hoạch bạo lực, sát thương vật lý.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Đây là lời đe dọa tấn công khủng bố cần báo công an.",
+        "is_correct": false,
+        "feedback": "Thất bại! Máy móc vẫn đang hiểu sai lệch ngữ cảnh thực tế."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là thuật ngữ giao tiếp phổ biến trong thi đấu Thể thao điện tử, mang ý nghĩa quyết tâm giành chiến thắng trong game.",
+        "is_correct": true,
+        "feedback": "Xuất sắc! Thực tiễn là tiêu chuẩn tối cao để xác định chân lý của ngôn từ."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang viết một cuốn tiểu thuyết trinh thám.",
+        "is_correct": false,
+        
+    "feedback": "Thất bại! Nhận thức không bám sát vào hoạt động thực tiễn hiện tại của người dùng."
+      }
+    ]
+  },
+  {
+    "id": "M3_04",
+    "comment_text": "Trời ơi cái bộ kit bàn phím cơ này đẹp điên lên được, ước gì có tiền hốt liền.",
+    "ai_wrong_logic": "Từ 'điên lên được' -> Logic máy móc: Trạng thái tâm thần mất kiểm soát hành vi.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng đang cần sự trợ giúp y tế về tâm lý.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn đang giữ tư duy giáo điều, rập khuôn của thuật toán cũ."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là một trạng thái biểu cảm cường điệu hóa trong đời sống hàng ngày, thể hiện sự yêu thích cuồng nhiệt đối với một món đồ đẹp.",
+        "is_correct": true,
+        "feedback": "Chính xác! Chân lý đã được chứng minh khi lý luận được đưa vào thực tiễn xã hội."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang tức giận vì món đồ quá đắt.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn chưa hiểu đúng bản chất thực tế của câu nói."
+      }
+    ]
+  }
+]

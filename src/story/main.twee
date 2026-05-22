@@ -1,0 +1,75 @@
+:: StoryTitle
+CENSOR-X: Thực Tiễn và Chân Lý
+
+:: StoryData
+{
+  "ifid": "9B3D7F6E-2E4A-4A5F-8F8D-D752E3029193",
+  "format": "SugarCube",
+  "format-version": "2.36.1"
+}
+
+:: StoryInit
+<<set $publicTrust to 100>>
+<<set $practiceMeter to 0>>
+<<set $prevPublicTrust to 100>>
+<<set $prevPracticeMeter to 0>>
+<<set $turn to 0>>
+<<set $act3Turn to 0>>
+<<set $gamePhase to "intro">>
+<<set $lastFeedback to "">>
+<<set $lastFeedbackType to "">>
+<<set $lastDelta to "">>
+<<run setup.initTheme()>>
+<<set $shuffledAct1 to clone(setup.act1Comments)>>
+<<run setup.shuffleArray($shuffledAct1)>>
+
+:: PassageHeader
+<<if $gamePhase is "act1" or $gamePhase is "act2" or $gamePhase is "act3">>\
+<div class="hud">
+  <div class="hud-logo">CENSOR-X</div>
+  <button class="theme-toggle" onclick="window.setup.toggleTheme()">◐</button>
+  <div class="hud-stats">
+<<if $gamePhase is "act3">>\
+    <div class="hud-stat">
+      <span class="hud-stat-label">THỰC TIỄN</span>
+      <div class="hud-bar"><div class="hud-bar-fill practice" style="width:<<= $prevPracticeMeter>>%"></div></div>
+      <span class="hud-value practice-val"><<= $prevPracticeMeter>>%</span>
+    </div>\
+<<else>>\
+    <div class="hud-stat">
+      <span class="hud-stat-label">TÍN NHIỆM</span>
+      <div class="hud-bar"><div class="hud-bar-fill trust" style="width:<<= $prevPublicTrust>>%"></div></div>
+      <span class="hud-value trust-val"><<= $prevPublicTrust>></span>
+    </div>\
+<</if>>\
+  </div>
+</div>
+<div class="hud-spacer"></div>\
+<<run setTimeout(function() {
+  setup.updateHUD();
+  State.variables.prevPublicTrust = State.variables.publicTrust;
+  State.variables.prevPracticeMeter = State.variables.practiceMeter;
+}, 50);>>\
+<</if>>\
+
+:: Start
+<div class="start-screen">
+  <div class="logo-anim">
+    <div class="logo">CENSOR-X</div>
+  </div>
+  <div class="tagline">AI CONTENT MODERATION SYSTEM v3.7.1</div>
+  <div class="description">
+    Bạn là kỹ sư hệ thống vừa được bổ nhiệm vào vị trí Quản trị viên cấp cao của nền tảng mạng xã hội lớn nhất Việt Nam.
+    Nhiệm vụ: Giám sát hệ thống kiểm duyệt nội dung AI — <strong style="color:var(--accent-gold)">CENSOR-X</strong>.
+  </div>
+  <div class="start-meta">
+    <span class="meta-tag">⚙ SugarCube Runtime</span>
+    <span class="meta-tag">◈ Triết học Mác-Lênin</span>
+    <span class="meta-tag">⬡ Nhận thức luận</span>
+    <button class="theme-toggle" onclick="window.setup.toggleTheme()" title="Chuyển đổi giao diện sáng/tối">◐</button>
+  </div>
+  <<link '<span class="btn btn-primary btn-glow">▸ KHỞI ĐỘNG HỆ THỐNG</span>'>>
+    <<set $gamePhase to "act1">>
+    <<goto "Act1_Intro">>
+  <</link>>
+</div>

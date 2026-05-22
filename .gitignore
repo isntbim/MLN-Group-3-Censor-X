@@ -1,0 +1,10 @@
+# Compiler binaries
+tweego/
+
+# IDE files
+idea/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

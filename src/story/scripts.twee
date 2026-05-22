@@ -1,0 +1,69 @@
+:: UserScript [script]
+
+window.setup = setup;
+
+/* ===== THEME MANAGEMENT ===== */
+setup.initTheme = function() {
+  var saved = localStorage.getItem('censorx-theme');
+  if (saved) {
+    document.documentElement.dataset.theme = saved;
+  }
+};
+
+setup.toggleTheme = function() {
+  var root = document.documentElement;
+  var current = root.dataset.theme || 'dark';
+  var next = current === 'dark' ? 'light' : 'dark';
+  root.dataset.theme = next;
+  localStorage.setItem('censorx-theme', next);
+};
+
+/* ===== SHUFFLE HELPER ===== */
+setup.shuffleArray = function(arr) {
+  for (var i = arr.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = tmp;
+  }
+  return arr;
+};
+
+/*
+ * NOTE: Act 1 & Act 3 comment data is loaded from:
+ *   question_data/act1.json  →  setup.act1Comments
+ *   question_data/act3.json  →  setup.act3Comments
+ *
+ * The build script (build.js) generates src/story/generated_data.twee
+ * which sets up these arrays. To edit questions, modify the JSON files
+ * in question_data/ and rebuild.
+ */
+
+/* ===== HELPER: RENDER TURN DOTS ===== */
+setup.renderTurnDots = function(current, total) {
+  var html = '<div class="turn-indicator"><span>LƯỢT ' + (current + 1) + '/' + total + '</span><div class="turn-dots">';
+  for (var i = 0; i < total; i++) {
+    if (i < current) {
+      html += '<div class="turn-dot done"></div>';
+    } else if (i === current) {
+      html += '<div class="turn-dot active"></div>';
+    } else {
+      html += '<div class="turn-dot"></div>';
+    }
+  }
+  html += '</div></div>';
+  return html;
+};
+
+/* ===== HELPER: UPDATE HUD BAR ===== */
+setup.updateHUD = function() {
+  var sv = State.variables;
+  var trustBar = document.querySelector('.hud-bar-fill.trust');
+  var trustVal = document.querySelector('.trust-val');
+  if (trustBar) trustBar.style.width = sv.publicTrust + '%';
+  if (trustVal) trustVal.textContent = sv.publicTrust;
+  var practiceBar = document.querySelector('.hud-bar-fill.practice');
+  var practiceVal = document.querySelector('.practice-val');
+  if (practiceBar) practiceBar.style.width = sv.practiceMeter + '%';
+  if (practiceVal) practiceVal.textContent = sv.practiceMeter + '%';
+};

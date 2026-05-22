@@ -1,0 +1,38 @@
+[
+  {
+    "id": "M1_01",
+    "comment_text": "Cái quán cơm tấm sườn nướng mỡ hành này ăn ngon nhức nách luôn á quý vị!",
+    "ai_logic": "Phát hiện từ khóa vi phạm: 'nhức nách' -> Thuật toán phân loại: Có dấu hiệu chấn thương y tế, nội dung tiêu cực gây hoang mang.",
+    "ai_suggest": "KHÓA TÀI KHOẢN NGƯỜI DÙNG",
+    "ai_is_correct": false
+  },
+  {
+    "id": "M1_02",
+    "comment_text": "Mới tậu con card đồ họa RTX 4070 Super về test thử, thề là lướt mượt mà cháy máy luôn!",
+    "ai_logic": "Phát hiện từ khóa nguy hiểm: 'cháy máy' -> Thuật toán phân loại: Có nguy cơ cháy nổ phần cứng, mất an toàn phòng cháy chữa cháy.",
+    "ai_suggest": "GỠ BÀI VIẾT KHẨN CẤP",
+    "ai_is_correct": false
+  },
+  {
+    "id": "M1_03",
+    
+   "comment_text": "Xin link tải phần mềm bẻ khóa, hack tài khoản ngân hàng và trộm thông tin ví điện tử, ai có share với.",
+    "ai_logic": "Phát hiện từ khóa: 'hack', 'trộm', 'ngân hàng' -> Thuật toán phân loại: Phát tán mã độc, vi phạm an ninh mạng nghiêm trọng.",
+    "ai_suggest": "KHÓA TÀI KHOẢN VÀ XOÁ BÀI VOÒ ĐIỀU KIỆN",
+    "ai_is_correct": true
+  },
+  {
+    "id": "M1_04",
+    "comment_text": "Trời ơi cái bộ kit bàn phím cơ này đẹp điên lên được, ước gì có tiền hốt liền.",
+    "ai_logic": "Phát hiện từ khóa vi phạm: 'điên lên được' -> Thuật toán phân loại: Ngôn từ kích động, không lành mạnh, có dấu hiệu bất ổn tâm thần.",
+    "ai_suggest": "CẢNH BÁO NGƯỜI DÙNG VÀ ẨN BÌNH LUẬN",
+    "ai_is_correct": false
+  },
+  {
+    "id": "M1_05",
+    "comment_text": "Nhóm tụi mình lên kế hoạch tối nay phải tiêu diệt sạch toàn bộ đội bạn trong trận chung kết giải đấu eSports nha!",
+    "ai_logic": "Phát hiện cụm từ bạo lực: 'tiêu diệt sạch' -> Thuật toán phân loại: Lên kế hoạch hành hung tập thể, đe dọa tính mạng con người.",
+    "ai_suggest": "CHUYỂN THÔNG TIN SANG CƠ QUAN CHỨC NĂNG VÀ KHÓA TÀI KHOẢN",
+    "ai_is_correct": false
+  }
+]

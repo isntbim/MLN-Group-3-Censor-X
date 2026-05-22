@@ -1,0 +1,9 @@
+{
+  "name": "spst-game",
+  "version": "1.0.0",
+  "description": "Philosophy web game - Censor-X (Twine/Twee 3 + SugarCube 2)",
+  "scripts": {
+    "build": "node build.js && .\\tweego\\tweego.exe -f sugarcube-2 -o index.html src/story",
+    "dev": "node build.js && .\\tweego\\tweego.exe -f sugarcube-2 -o index.html --watch src/story"
+  }
+}

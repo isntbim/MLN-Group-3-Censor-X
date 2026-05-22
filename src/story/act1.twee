@@ -1,0 +1,158 @@
+:: Act1_Intro
+<div class="act-title">
+  <h1>MÀN 1: ẢO TƯỞNG LÝ THUYẾT</h1>
+  <div class="subtitle">Hệ thống AI kiểm duyệt CENSOR-X đã được triển khai. Nhiệm vụ của bạn: giám sát 5 bình luận đầu tiên và phê duyệt hoặc bác bỏ đề xuất xử lý của AI.</div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">Thông tin nhiệm vụ</div>
+  <div class="sys-msg info">Thuật toán CENSOR-X phân tích nội dung dựa trên <strong>từ khóa</strong> và <strong>quy tắc ngữ pháp logic</strong> — một hệ thống lý luận thuần túy, không có dữ liệu ngữ cảnh đời sống.</div>
+  <div class="sys-msg warn" style="margin-top:8px">Mỗi quyết định sai lầm sẽ ảnh hưởng trực tiếp đến Điểm Tín nhiệm Cộng đồng. Nếu tín nhiệm chạm 0 → Hệ thống sụp đổ hoàn toàn.</div>
+</div>
+
+<div style="text-align:center">
+  <<link '<span class="btn btn-primary btn-glow">▸ BẮT ĐẦU DUYỆT</span>'>>
+    <<goto "Act1_Review">>
+  <</link>>
+</div>
+
+:: Act1_Review
+<<set _c to $shuffledAct1[$turn]>>\
+<<= setup.renderTurnDots($turn, 5)>>
+
+<div class="panel">
+  <div class="panel-header">Bình luận người dùng</div>
+  <div class="ig-post">
+    <div class="ig-header">
+      <div class="ig-avatar" style="background:<<= _c.avatar_color>>"><<= _c.displayName.charAt(0)>></div>
+      <div class="ig-user-info">
+        <div class="ig-username"><<= _c.displayName>></div>
+        <div class="ig-handle">@<<= _c.user>> · <<= _c.timeAgo>></div>
+      </div>
+    </div>
+    <div class="ig-content"><<= _c.comment_text>></div>
+    <div class="ig-actions">
+      <span class="ig-action">♡ <<= _c.likes.toLocaleString('vi-VN')>></span>
+      <span class="ig-action">💬 Bình luận</span>
+      <span class="ig-action">↗ Chia sẻ</span>
+    </div>
+  </div>
+</div>
+
+<div class="ai-analysis">
+  <div class="ai-analysis-header">Phân tích của CENSOR-X</div>
+  <div class="ai-analysis-text"><<= _c.ai_logic>></div>
+  <div class="ai-suggest">ĐỀ XUẤT: <<= _c.ai_suggest>></div>
+</div>
+
+<div class="btn-group">\
+<<link '<span class="btn btn-approve">✓ APPROVE — ĐỒNG Ý VỚI AI</span>'>>
+  <<set _c to $shuffledAct1[$turn]>>
+  <<if _c.ai_is_correct>>
+    <<set $publicTrust to Math.min(100, $publicTrust + 10)>>
+    <<set $lastFeedback to "Xử lý chính xác! Trong trường hợp này, lý luận (thuật toán) đã phản ánh đúng bản chất của thực tiễn.">>
+    <<set $lastFeedbackType to "success">>
+    <<set $lastDelta to "TÍN NHIỆM +10">>
+  <<else>>
+    <<set $publicTrust to Math.max(0, $publicTrust - 25)>>
+    <<set $lastFeedback to "🔥 BÁO ĐỘNG! Hệ thống đã khóa nhầm một người dùng vô tội! Áp dụng lý thuyết rập khuôn, siêu hình, xa rời thực tiễn sinh động.">>
+    <<set $lastFeedbackType to "error">>
+    <<set $lastDelta to "TÍN NHIỆM -25">>
+  <</if>>
+  <<set $turn to $turn + 1>>
+  <<goto "Act1_Feedback">>
+<</link>>\
+<<link '<span class="btn btn-reject">✗ REJECT — BÁC BỎ AI</span>'>>
+  <<set _c to $shuffledAct1[$turn]>>
+  <<if _c.ai_is_correct>>
+    <<set $publicTrust to Math.max(0, $publicTrust - 20)>>
+    <<set $lastFeedback to "Sai lầm! Tư duy chủ quan của bạn đã dung túng cho hành vi vi phạm pháp luật thực tế.">>
+    <<set $lastFeedbackType to "error">>
+    <<set $lastDelta to "TÍN NHIỆM -20">>
+  <<else>>
+    <<set $lastFeedback to "Hành động sáng suốt! Bạn đã chặn đứng một quyết định sai lầm, cứng nhắc của máy móc.">>
+    <<set $lastFeedbackType to "success">>
+    <<set $lastDelta to "">>
+  <</if>>
+  <<set $turn to $turn + 1>>
+  <<goto "Act1_Feedback">>
+<</link>>\
+</div>
+
+:: Act1_Feedback
+<div class="feedback-box feedback-<<= $lastFeedbackType>>">
+  <div class="feedback-text"><<= $lastFeedback>></div>\
+<<if $lastDelta neq "">>\
+  <div class="feedback-delta"><<= $lastDelta>></div>\
+<</if>>\
+</div>
+
+<div class="panel" style="margin-top:12px">
+  <div class="panel-header">Trạng thái hệ thống</div>
+  <div style="font-family:var(--font-mono);font-size:0.82rem;color:var(--text-secondary)">
+    Điểm Tín nhiệm: <strong style="color:var(--accent-gold)"><<= $publicTrust>></strong>/100 &nbsp;|&nbsp; Lượt đã xử lý: <strong style="color:var(--accent-gold)"><<= $turn>></strong>/5
+  </div>
+</div>
+
+<div style="text-align:center">\
+<<if $publicTrust lte 0>>\
+  <<link '<span class="btn btn-danger">HỆ THỐNG SỤP ĐỔ →</span>'>>
+    <<goto "GameOver">>
+  <</link>>\
+<<elseif $turn gte 5>>\
+  <<link '<span class="btn btn-primary">TIẾP TỤC →</span>'>>
+    <<if $publicTrust lt 40>>
+      <<goto "Act2_Crisis">>
+    <<else>>
+      <<goto "Act1_ScaleUp">>
+    <</if>>
+  <</link>>\
+<<elseif $publicTrust lt 40>>\
+  <<link '<span class="btn btn-danger">CẢNH BÁO HỆ THỐNG →</span>'>>
+    <<goto "Act2_Crisis">>
+  <</link>>\
+<<else>>\
+  <<link '<span class="btn btn-primary">CÂU TIẾP THEO →</span>'>>
+    <<goto "Act1_Review">>
+  <</link>>\
+<</if>>\
+</div>
+
+:: Act1_ScaleUp
+<div class="crisis-screen">
+<div class="panel">
+  <div class="panel-header">Hệ thống tự động cập nhật</div>
+  <div class="sys-msg info">[SYSTEM UPDATE]: Giai đoạn thử nghiệm cục bộ hoàn tất thành công.</div>
+<<timed 1.5s t8n>>\
+<div class="sys-msg warn">[AUTO-SCALE]: Hệ thống tự động nâng cấp quy mô. Nền tảng chính thức đón nhận <strong>10.000.000</strong> người dùng mới từ nhiều vùng miền, văn hóa khác nhau.</div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<<next 1.5s t8n>>\
+<div class="sys-msg error">[CRITICAL]: Chuyển giao 100% quyền quyết định cho AI duyệt tự động toàn phần để tối ưu tốc độ. Quyền can thiệp thủ công đã bị ĐÓNG BĂNG.</div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<<next 2s t8n>>\
+<div class="sys-msg error" style="font-size:0.9rem;padding:16px;">[EMERGENCY]: Trong vòng 2 giây, AI CENSOR-X đã tự động quét và <strong>KHÓA NHẦM</strong> tài khoản người dùng mới vì họ sử dụng tiếng lóng vùng miền.</div>\
+<div style="text-align:center;margin:16px 0">\
+  <div class="scaleup-label">SỐ TÀI KHOẢN BỊ KHÓA NHẦM</div>\
+  <div class="scaleup-number"><span id="ban-counter">0</span></div>\
+</div>\
+<<set _counter to 0>>\
+<<repeat 30ms>>\
+  <<set _counter to Math.min(_counter + 4200, 350000)>>\
+  <<run document.getElementById('ban-counter').textContent = _counter.toLocaleString('vi-VN')>>\
+  <<if _counter gte 350000>>\
+    <<run State.variables.publicTrust = 15; State.variables.prevPublicTrust = 15; setup.updateHUD()>>\
+    <<stop>>\
+  <</if>>\
+<</repeat>>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<<next 4s t8n>>\
+<div class="sys-msg error">[ALERT]: Điểm Tín Nhiệm Cộng đồng tụt thẳng xuống <strong>15%</strong>. Làn sóng tẩy chay bùng nổ trên toàn quốc!</div>\
+<div style="text-align:center;margin-top:20px">\
+  <<link '<span class="btn btn-danger btn-glow">⚠ CHUYỂN SANG CHẾ ĐỘ KHẨN CẤP</span>'>>\
+    <<goto "Act2_Crisis">>\
+  <</link>>\
+</div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<</timed>>
+</div>
+</div>

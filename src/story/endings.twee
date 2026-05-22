@@ -1,0 +1,58 @@
+:: WinScreen
+<<set $gamePhase to "end">>\
+<div class="win-screen">
+  <h1>✦ HỆ THỐNG KHÔI PHỤC HOÀN TOÀN ✦</h1>
+
+  <div class="end-message">
+    <div class="sys-msg ok" style="text-align:left;margin-bottom:16px">[SUCCESS]: Hệ thống vận hành hoàn hảo. Nhận thức của AI đã đạt tới Chân lý khách quan nhờ được soi sáng bởi Thực tiễn nhân loại.</div>
+  </div>
+
+  <div class="marx-quote" style="text-align:left">
+    <blockquote>"Vấn đề tìm hiểu xem tư duy của con người có thể đạt tới chân lý khách quan không, hoàn toàn không phải là một vấn đề lý luận mà là một vấn đề thực tiễn."</blockquote>
+    <div class="attribution">— Karl Marx —</div>
+  </div>
+
+  <div class="panel" style="text-align:left;margin-top:24px;max-width:600px">
+    <div class="panel-header" style="color:var(--accent-green)">Kết luận Triết học</div>
+    <div style="font-size:0.9rem;line-height:1.9;color:var(--text-secondary)">
+      <p>Thuật toán CENSOR-X ban đầu — dù hoàn hảo trên mặt logic — đã thất bại hoàn toàn khi va chạm với thực tiễn. Lý luận thuần túy không thể tự chứng minh nó đúng.</p>
+      <p style="margin-top:12px"><strong style="color:var(--accent-gold)">Thực tiễn là tiêu chuẩn duy nhất của chân lý.</strong> Chỉ khi đem lý luận vào kiểm nghiệm trong hoạt động thực tiễn xã hội, thông qua kết quả thực tế, con người mới biết được đâu là chân lý khách quan.</p>
+      <p style="margin-top:12px">Quá trình bạn "nạp ngữ cảnh thực tế" để sửa lỗi cho AI chính là quá trình con người đem lý luận vào kiểm nghiệm trong thực tiễn — và đó là con đường duy nhất để tiệm cận chân lý.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:28px">
+    <<link '<span class="btn btn-primary">↻ CHƠI LẠI TỪ ĐẦU</span>'>>
+      <<run Engine.restart()>>
+    <</link>>
+  </div>
+</div>
+
+:: GameOver
+<<set $gamePhase to "end">>\
+<div class="gameover-screen">
+  <h1>HỆ THỐNG SỤP ĐỔ</h1>
+
+  <div class="end-message">
+    <div class="sys-msg error" style="text-align:left;margin-bottom:16px">[FATAL]: Điểm Tín nhiệm Cộng đồng đã chạm mức 0. Nền tảng mạng xã hội bị tẩy chay hoàn toàn và phải ngừng hoạt động vĩnh viễn.</div>
+  </div>
+
+  <div class="panel" style="text-align:left;max-width:600px">
+    <div class="panel-header" style="color:var(--accent-red)">Nguyên nhân thất bại</div>
+    <div style="font-size:0.9rem;line-height:1.9;color:var(--text-secondary)">
+      <p>Hệ thống kiểm duyệt đã áp dụng lý luận máy móc, giáo điều vào thực tiễn mà không có sự kiểm chứng, dẫn đến hàng loạt sai lầm nghiêm trọng.</p>
+      <p style="margin-top:12px">Khi lý luận xa rời thực tiễn, hành động sẽ tất yếu sai lầm — và hậu quả thực tế là điều không thể tránh khỏi.</p>
+    </div>
+  </div>
+
+  <div class="marx-quote" style="text-align:left;margin-top:20px;max-width:600px">
+    <blockquote>"Vấn đề tìm hiểu xem tư duy của con người có thể đạt tới chân lý khách quan không, hoàn toàn không phải là một vấn đề lý luận mà là một vấn đề thực tiễn."</blockquote>
+    <div class="attribution">— Karl Marx —</div>
+  </div>
+
+  <div style="margin-top:28px">
+    <<link '<span class="btn btn-danger">↻ CHƠI LẠI TỪ ĐẦU</span>'>>
+      <<run Engine.restart()>>
+    <</link>>
+  </div>
+</div>
