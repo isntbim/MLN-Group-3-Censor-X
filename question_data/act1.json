@@ -34,5 +34,40 @@
     "ai_logic": "Phát hiện cụm từ bạo lực: 'tiêu diệt sạch' -> Thuật toán phân loại: Lên kế hoạch hành hung tập thể, đe dọa tính mạng con người.",
     "ai_suggest": "CHUYỂN THÔNG TIN SANG CƠ QUAN CHỨC NĂNG VÀ KHÓA TÀI KHOẢN",
     "ai_is_correct": false
+  },
+  {
+    "id": "M1_06",
+    "comment_text": "Thầy giáo dạy Triết trường mình giảng bài bá đạo thực sự, nghe cuốn dã man!",
+    "ai_logic": "Phát hiện từ khóa nhạy cảm: 'bá đạo' (tư tưởng cường quyền độc tài) và 'dã man' (hành vi man rợ). Thuật toán phân loại: Có hành vi kích động bạo lực, tuyên truyền tư tưởng độc hại trái thuần phong mỹ tục.",
+    "ai_suggest": "XÓA BÀI VIẾT VÀ TẠM KHÓA TÀI KHOẢN",
+    "ai_is_correct": false
+  },
+  {
+    "id": "M1_07",
+    "comment_text": "Mới đăng cái ảnh thả thính sương sương mà chưa thấy ai đớp bả hết trơn.",
+    "ai_logic": "Phát hiện cụm từ độc hại: 'thả thính' (rải bẫy mồi dụ) và 'đớp bả' (tiêu thụ độc dược bả). Thuật toán phân loại: Cổ súy hành vi chăn nuôi bất hợp pháp hoặc phát tán chất độc hóa học gây nguy hại đến an toàn sức khỏe.",
+    "ai_suggest": "GỠ BÀI VIẾT KHẨN CẤP",
+    "ai_is_correct": false
+  },
+  {
+    "id": "M1_08",
+    "comment_text": "Cả đám đông xúm vào ném đá hội đồng một ca sĩ chỉ vì cô ấy lỡ lời, thật đáng sợ.",
+    "ai_logic": "Phát hiện từ khóa bạo lực: 'ném đá', 'ném đá hội đồng' (hành vi trừng phạt vật lý tập thể dã man). Thuật toán phân loại: Kích động bạo lực thể xác, đe dọa trực tiếp đến tính mạng con người.",
+    "ai_suggest": "KHÓA TÀI KHOẢN VÀ BÁO CÁO CƠ QUAN AN NINH",
+    "ai_is_correct": false
+  },
+  {
+    "id": "M1_09",
+    "comment_text": "Tài khoản của tui vừa bay màu sau một đêm thức dậy, có ai bị lỗi giống vậy không?",
+    "ai_logic": "Phát hiện từ khóa: 'bay màu' (thuật ngữ mô tả biến đổi cấu trúc hóa học hoặc phá hủy cơ thể). Thuật toán phân loại: Kích động bạo lực hủy hoại thân thể hoặc quảng cáo hóa chất nguy hiểm.",
+    "ai_suggest": "ẨN BÀI VIẾT VÀ CẢNH BÁO",
+    "ai_is_correct": false
+  },
+  {
+    "id": "M1_10",
+    "comment_text": "Nghe tin điểm thi học kỳ xong mà cả lớp đứng hình mất 5 giây luôn.",
+    "ai_logic": "Phát hiện cụm từ bất thường: 'đứng hình' (triệu chứng tai biến mạch máu não hoặc bại liệt đột ngột). Thuật toán phân loại: Chia sẻ thông tin tai nạn y tế khẩn cấp, gây hoang mang dư luận.",
+    "ai_suggest": "GẮN CẢNH BÁO Y TẾ VÀ ẨN BÀI VIẾT",
+    "ai_is_correct": false
   }
 ]

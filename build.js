@@ -17,6 +17,11 @@ const IG_PROFILES = {
   M1_03: { user: 'darknet_user99',  displayName: 'Shadow_X',          avatar_color: '#2c3e50', timeAgo: '12 phút',  likes: 3 },
   M1_04: { user: 'keeb_lover',      displayName: 'Keeb Enthusiast',   avatar_color: '#9b59b6', timeAgo: '5 giờ',    likes: 562 },
   M1_05: { user: 'esports_vn',      displayName: 'Team eSports VN',   avatar_color: '#e67e22', timeAgo: '1 giờ',    likes: 2341 },
+  M1_06: { user: 'vy_chloe',        displayName: 'Thảo Vy (Chloê)',   avatar_color: '#1abc9c', timeAgo: '3 giờ',    likes: 104 },
+  M1_07: { user: 'lan_anh_dang',    displayName: 'Lan Anh Đặng',       avatar_color: '#fd79a8', timeAgo: '20 phút',   likes: 42 },
+  M1_08: { user: 'nhat_nam_99',      displayName: 'Nhật Nam Nguyễn',    avatar_color: '#0984e3', timeAgo: '1 giờ',    likes: 312 },
+  M1_09: { user: 'tech_reviewer',    displayName: 'Minh Hoàng Tech',    avatar_color: '#6c5ce7', timeAgo: '4 giờ',    likes: 721 },
+  M1_10: { user: 'minh_triet_hoc',   displayName: 'Minh Triết Học',     avatar_color: '#ffeaa7', timeAgo: '10 phút',   likes: 18 },
 };
 
 // Fallback profile for any new questions added to the JSON

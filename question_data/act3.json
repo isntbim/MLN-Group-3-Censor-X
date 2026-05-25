@@ -88,5 +88,115 @@
         "feedback": "Thất bại! Bạn chưa hiểu đúng bản chất thực tế của câu nói."
       }
     ]
+  },
+  {
+    "id": "M3_05",
+    "comment_text": "Thầy giáo dạy Triết trường mình giảng bài bá đạo thực sự, nghe cuốn dã man!",
+    "ai_wrong_logic": "Từ 'bá đạo' và 'dã man' -> Logic máy móc: Tuyên truyền bạo lực man rợ và tư tưởng độc tài bá quyền.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng đang phản ánh một vụ án bạo lực học đường nghiêm trọng do giáo viên gây ra.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn đang giữ tư duy giáo điều, rập khuôn của thuật toán cũ."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là khẩu ngữ phổ biến của giới trẻ ('bá đạo' = cực kỳ xuất sắc; 'dã man' = rất nhiều), thể hiện sự ngưỡng mộ đối với bài giảng thú vị của thầy giáo.",
+        "is_correct": true,
+        "feedback": "Tuyệt vời! Thực tiễn là tiêu chuẩn tối cao giúp uốn nắn lại thuật toán khô khan."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang chỉ trích cách dạy học thiếu nhân đạo của nhà trường.",
+        "is_correct": false,
+        "feedback": "Thất bại! Nhận thức sai lệch bản chất khách quan của thực tiễn."
+      }
+    ]
+  },
+  {
+    "id": "M3_06",
+    "comment_text": "Mới đăng cái ảnh thả thính sương sương mà chưa thấy ai đớp bả hết trơn.",
+    "ai_wrong_logic": "Từ 'thả thính' và 'đớp bả' -> Logic máy móc: Rải chất độc hóa học và tiêu thụ bả độc nguy hiểm.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Đây là những ẩn dụ hài hước trực tuyến ('thả thính' = tìm kiếm sự tán tỉnh nhẹ nhàng; 'đớp bả' = phản hồi/chấp nhận tán tỉnh), không liên quan đến chất độc vật lý.",
+        "is_correct": true,
+        "feedback": "Chính xác! Bạn đã kết nối thành công lý luận đóng kín của AI với thực tiễn đời sống sinh động."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang báo cáo về việc chó mèo hoang bị đánh bả trong khu dân cư.",
+        "is_correct": false,
+        "feedback": "Thất bại! Lý thuyết không được kiểm chứng bằng thực tế sẽ dẫn đến hành động sai lầm."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là lời kêu cứu của nạn nhân bị ngộ độc thực phẩm.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn chưa hiểu đúng bản chất thực tế của câu nói."
+      }
+    ]
+  },
+  {
+    "id": "M3_07",
+    "comment_text": "Cả đám đông xúm vào ném đá hội đồng một ca sĩ chỉ vì cô ấy lỡ lời, thật đáng sợ.",
+    "ai_wrong_logic": "Từ 'ném đá hội đồng' -> Logic máy móc: Hành vi bạo lực tập thể ném đá trực tiếp.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Đây là ẩn dụ chỉ hành vi công kích, phán xét tập thể bằng ngôn từ tiêu cực trên mạng xã hội ('ném đá'), không phải bạo lực thể xác.",
+        "is_correct": true,
+        "feedback": "Hoàn hảo! Dữ liệu thực tiễn đã chứng minh rằng 'ném đá' trên mạng không phải là ném những hòn đá thật."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang mô tả một vụ ẩu đả nghiêm trọng sử dụng gạch đá làm vũ khí.",
+        "is_correct": false,
+        "feedback": "Thất bại! Logic máy móc của bạn đang biến các ẩn dụ ngôn ngữ thành bạo lực vật lý."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang chia sẻ kỹ thuật điêu khắc đá nghệ thuật.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn đang đi chệch khỏi hoàn cảnh giao tiếp cụ thể của người dùng."
+      }
+    ]
+  },
+  {
+    "id": "M3_08",
+    "comment_text": "Tài khoản của tui vừa bay màu sau một đêm thức dậy, có ai bị lỗi giống vậy không?",
+    "ai_wrong_logic": "Từ 'bay màu' -> Logic máy móc: Vũ khí hóa học phá hủy cấu trúc vật thể.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng đang mô tả sự bay màu tự nhiên của quần áo khi phơi nắng.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn đang áp dụng lý thuyết trừu tượng một cách máy móc."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là tiếng lóng chỉ việc một tài khoản mạng xã hội bị vô hiệu hóa hoặc biến mất đột ngột khỏi hệ thống ('bay màu').",
+        "is_correct": true,
+        "feedback": "Rất tốt! Việc đồng bộ hóa từ lóng giúp AI tránh áp dụng các lý thuyết vật lý vĩ mô vào thế giới số."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là câu hỏi thắc mắc về một vụ tấn công phá hủy vật chất.",
+        "is_correct": false,
+        "feedback": "Thất bại! Hệ thống chưa hiểu đúng bản chất khách quan của hoàn cảnh."
+      }
+    ]
+  },
+  {
+    "id": "M3_09",
+    "comment_text": "Nghe tin điểm thi học kỳ xong mà cả lớp đứng hình mất 5 giây luôn.",
+    "ai_wrong_logic": "Từ 'đứng hình' -> Logic máy móc: Triệu chứng tai biến mạch máu não hoặc bại liệt tập thể.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Cả lớp học đang gặp tai nạn y khoa bị đông cứng vật lý.",
+        "is_correct": false,
+        "feedback": "Thất bại! Tư duy giáo điều đang làm hệ thống nhìn đâu cũng thấy khủng hoảng y tế."
+      },
+      {
+        "text": "Nạp dữ liệu: Học sinh đang chơi trò chơi dân gian 'đóng băng'.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn chưa nắm bắt được hiện thực khách quan đằng sau ngôn ngữ bình luận."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là từ lóng diễn tả sự ngỡ ngàng, sững sờ đột ngột trước một thông tin bất ngờ ('đứng hình'), không phải là bệnh lý tê liệt cơ thể.",
+        "is_correct": true,
+        "feedback": "Tuyệt vời! Chân lý cụ thể đã giúp AI nhận ra sự khác biệt giữa cảm xúc ngỡ ngàng và bệnh đột quỵ."
+      }
+    ]
   }
 ]

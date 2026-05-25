@@ -19,7 +19,7 @@
 </div>
 
 :: Act3_Review
-<<set _c to setup.act3Comments[$act3Turn]>>\
+<<set _c to $shuffledAct3[$act3Turn]>>\
 <<= setup.renderTurnDots($act3Turn, 4)>>
 
 <div class="debug-console">
@@ -45,7 +45,7 @@
 <<for _i, _opt range _c.options>>\
     <<capture _i>>\
     <<link '<span class="context-option"><<= _opt.text>></span>'>>
-      <<set _c to setup.act3Comments[$act3Turn]>>
+      <<set _c to $shuffledAct3[$act3Turn]>>
       <<set _opt to _c.options[_i]>>
       <<if _opt.is_correct>>
         <<set $practiceMeter to $practiceMeter + 25>>

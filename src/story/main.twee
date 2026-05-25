@@ -22,6 +22,8 @@ CENSOR-X: Thực Tiễn và Chân Lý
 <<run setup.initTheme()>>
 <<set $shuffledAct1 to clone(setup.act1Comments)>>
 <<run setup.shuffleArray($shuffledAct1)>>
+<<set $shuffledAct3 to clone(setup.act3Comments)>>
+<<run setup.shuffleArray($shuffledAct3)>>
 
 :: PassageHeader
 <<if $gamePhase is "act1" or $gamePhase is "act2" or $gamePhase is "act3">>\
@@ -71,6 +73,10 @@ CENSOR-X: Thực Tiễn và Chân Lý
   </div>
   <<link '<span class="btn btn-primary btn-glow">▸ KHỞI ĐỘNG HỆ THỐNG</span>'>>
     <<set $gamePhase to "act1">>
+    <<set $shuffledAct1 to clone(setup.act1Comments)>>
+    <<run setup.shuffleArray($shuffledAct1)>>
+    <<set $shuffledAct3 to clone(setup.act3Comments)>>
+    <<run setup.shuffleArray($shuffledAct3)>>
     <<goto "Act1_Intro">>
   <</link>>
 </div>
