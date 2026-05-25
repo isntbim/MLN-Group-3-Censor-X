@@ -1055,7 +1055,7 @@ a:hover { text-decoration: none; color: var(--accent-red); }
 /* ============================================================
    AUTO-GENERATED — DO NOT EDIT MANUALLY
    Source: question_data/act1.json, question_data/act3.json
-   Generated: 2026-05-22T16:18:06.975Z
+   Generated: 2026-05-25T13:51:56.963Z
    ============================================================ */
 
 setup.act1Comments = [
@@ -1296,6 +1296,13 @@ setup.updateHUD = function() {
   &lt;div class=&quot;sys-msg warn&quot; style=&quot;margin-top:8px&quot;&gt;Mỗi quyết định sai lầm sẽ ảnh hưởng trực tiếp đến Điểm Tín nhiệm Cộng đồng. Nếu tín nhiệm chạm 0 → Hệ thống sụp đổ hoàn toàn.&lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&quot;marx-quote&quot; style=&quot;text-align:left;margin-bottom:22px&quot;&gt;
+  &lt;div style=&quot;font-family:var(--font-mono);font-size:0.7rem;color:var(--accent-gold);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px&quot;&gt;✦ Lý thuyết liên hệ — Tính khách quan của Chân lý&lt;/div&gt;
+  &lt;blockquote style=&quot;font-size:1rem&quot;&gt;&quot;Chân lý là tri thức phù hợp với hiện thực khách quan và được thực tiễn kiểm nghiệm. Nội dung phản ánh của chân lý là khách quan — không phụ thuộc vào ý chí hay lợi ích chủ quan của con người.&quot;&lt;/blockquote&gt;
+  &lt;div class=&quot;attribution&quot;&gt;— Triết học Mác - Lênin (Bộ GD&amp;ĐT) —&lt;/div&gt;
+  &lt;div style=&quot;font-size:0.85rem;color:var(--text-secondary);margin-top:10px;font-family:var(--font-body);line-height:1.75&quot;&gt;⟶ &lt;em&gt;Trong màn này, hãy quan sát: liệu hệ thống CENSOR-X có phán xét dựa trên &lt;strong&gt;hiện thực khách quan&lt;/strong&gt; của từng bình luận, hay chỉ dựa trên các quy tắc logic hình thức chủ quan của nó?&lt;/em&gt;&lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div style=&quot;text-align:center&quot;&gt;
   &lt;&lt;link &#39;&lt;span class=&quot;btn btn-primary btn-glow&quot;&gt;▸ BẮT ĐẦU DUYỆT&lt;/span&gt;&#39;&gt;&gt;
     &lt;&lt;goto &quot;Act1_Review&quot;&gt;&gt;
@@ -1374,6 +1381,15 @@ setup.updateHUD = function() {
   &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;&lt;if $lastFeedbackType is &quot;error&quot;&gt;&gt;
+&lt;div class=&quot;marx-quote&quot; style=&quot;text-align:left;margin-top:14px&quot;&gt;
+  &lt;div style=&quot;font-family:var(--font-mono);font-size:0.7rem;color:var(--accent-red);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px&quot;&gt;✦ Lý thuyết liên hệ — Tính cụ thể của Chân lý&lt;/div&gt;
+  &lt;blockquote style=&quot;font-size:0.95rem&quot;&gt;&quot;Không có chân lý trừu tượng, chung chung — chân lý luôn là cụ thể. Chân lý phản ánh sự vật trong một điều kiện cụ thể, hoàn cảnh lịch sử cụ thể, không gian và thời gian xác định. Thoát ly những điều kiện cụ thể này sẽ không phản ánh đúng đắn sự vật.&quot;&lt;/blockquote&gt;
+  &lt;div class=&quot;attribution&quot;&gt;— Triết học Mác - Lênin (Bộ GD&amp;ĐT) —&lt;/div&gt;
+  &lt;div style=&quot;font-size:0.85rem;color:var(--text-secondary);margin-top:10px;font-family:var(--font-body);line-height:1.75&quot;&gt;⟶ &lt;em&gt;CENSOR-X đã áp dụng quy tắc chung chung, bỏ qua &lt;strong&gt;ngữ cảnh cụ thể&lt;/strong&gt; của bình luận — đó chính là sai lầm của tư duy giáo điều, xa rời thực tiễn mà V.I.Lênin gọi là &quot;rập khuôn, máy móc&quot;.&lt;/em&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;&lt;/if&gt;&gt;
+
 &lt;div style=&quot;text-align:center&quot;&gt;\
 &lt;&lt;if $publicTrust lte 0&gt;&gt;\
   &lt;&lt;link &#39;&lt;span class=&quot;btn btn-danger&quot;&gt;HỆ THỐNG SỤP ĐỔ →&lt;/span&gt;&#39;&gt;&gt;
@@ -1446,6 +1462,14 @@ setup.updateHUD = function() {
     &lt;div class=&quot;sys-msg error&quot;&gt;Hệ thống kiểm duyệt CENSOR-X đã sụp đổ hoàn toàn. Thuật toán lý thuyết thuần túy không thể xử lý ngôn ngữ thực tiễn của con người.&lt;/div&gt;
     &lt;div class=&quot;sys-msg error&quot;&gt;Nguyên nhân gốc rễ: AI được xây dựng trên 100% quy tắc logic hình thức — một hệ thống lý luận đóng kín, cô lập với thực tiễn đời sống xã hội.&lt;/div&gt;
   &lt;/div&gt;
+
+  &lt;div class=&quot;marx-quote&quot; style=&quot;text-align:left;margin-top:18px&quot;&gt;
+    &lt;div style=&quot;font-family:var(--font-mono);font-size:0.7rem;color:var(--accent-yellow);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px&quot;&gt;✦ Lý thuyết liên hệ — Tính tương đối &amp; Tuyệt đối của Chân lý&lt;/div&gt;
+    &lt;blockquote style=&quot;font-size:0.95rem&quot;&gt;&quot;Tính tương đối của chân lý thể hiện ở chỗ những tri thức đúng nhưng chưa hoàn toàn đầy đủ — nó mới phản ánh đúng một mặt, một bộ phận nào đó của hiện thực khách quan trong những điều kiện giới hạn xác định.&quot;&lt;/blockquote&gt;
+    &lt;div class=&quot;attribution&quot;&gt;— Triết học Mác - Lênin (Bộ GD&amp;ĐT) —&lt;/div&gt;
+    &lt;div style=&quot;font-size:0.85rem;color:var(--text-secondary);margin-top:10px;font-family:var(--font-body);line-height:1.75&quot;&gt;⟶ &lt;em&gt;Thuật toán CENSOR-X &lt;strong&gt;không sai hoàn toàn&lt;/strong&gt; — nó có thể đúng trong điều kiện phòng thí nghiệm hạn chế. Đó là &lt;strong&gt;chân lý tương đối&lt;/strong&gt;. Nhưng khi đối mặt với 10 triệu người dùng thực tế đa dạng, nó đã chứng minh giới hạn của mình. Con người cần không ngừng tiệm cận chân lý tuyệt đối thông qua thực tiễn.&lt;/em&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
 
   &lt;&lt;timed 2s t8n&gt;&gt;\
 &lt;div class=&quot;marx-quote&quot;&gt;
@@ -1573,11 +1597,11 @@ setup.updateHUD = function() {
   &lt;/div&gt;
 
   &lt;div class=&quot;panel&quot; style=&quot;text-align:left;margin-top:24px;max-width:600px&quot;&gt;
-    &lt;div class=&quot;panel-header&quot; style=&quot;color:var(--accent-green)&quot;&gt;Kết luận Triết học&lt;/div&gt;
+    &lt;div class=&quot;panel-header&quot; style=&quot;color:var(--accent-green)&quot;&gt;Kết luận Triết học — 3 Tính chất của Chân lý qua hành trình CENSOR-X&lt;/div&gt;
     &lt;div style=&quot;font-size:0.9rem;line-height:1.9;color:var(--text-secondary)&quot;&gt;
-      &lt;p&gt;Thuật toán CENSOR-X ban đầu — dù hoàn hảo trên mặt logic — đã thất bại hoàn toàn khi va chạm với thực tiễn. Lý luận thuần túy không thể tự chứng minh nó đúng.&lt;/p&gt;
-      &lt;p style=&quot;margin-top:12px&quot;&gt;&lt;strong style=&quot;color:var(--accent-gold)&quot;&gt;Thực tiễn là tiêu chuẩn duy nhất của chân lý.&lt;/strong&gt; Chỉ khi đem lý luận vào kiểm nghiệm trong hoạt động thực tiễn xã hội, thông qua kết quả thực tế, con người mới biết được đâu là chân lý khách quan.&lt;/p&gt;
-      &lt;p style=&quot;margin-top:12px&quot;&gt;Quá trình bạn &quot;nạp ngữ cảnh thực tế&quot; để sửa lỗi cho AI chính là quá trình con người đem lý luận vào kiểm nghiệm trong thực tiễn — và đó là con đường duy nhất để tiệm cận chân lý.&lt;/p&gt;
+      &lt;p&gt;&lt;strong style=&quot;color:var(--accent-gold)&quot;&gt;① Tính khách quan (Màn 1):&lt;/strong&gt; Thuật toán CENSOR-X ban đầu phán xét dựa trên quy tắc logic chủ quan của mình — không phản ánh hiện thực khách quan của từng bình luận. Chân lý không phụ thuộc vào ý chí hay lợi ích của hệ thống, mà phải phù hợp với thực tại khách quan.&lt;/p&gt;
+      &lt;p style=&quot;margin-top:12px&quot;&gt;&lt;strong style=&quot;color:var(--accent-yellow)&quot;&gt;② Tính tương đối &amp; Tuyệt đối (Màn 2):&lt;/strong&gt; CENSOR-X &quot;đúng&quot; trong môi trường thử nghiệm giới hạn — đó là chân lý tương đối. Khi mở rộng quy mô thực tế, những giới hạn đó bộc lộ. Nhận thức phải không ngừng vận động, phát triển để tiệm cận chân lý tuyệt đối.&lt;/p&gt;
+      &lt;p style=&quot;margin-top:12px&quot;&gt;&lt;strong style=&quot;color:var(--accent-green)&quot;&gt;③ Tính cụ thể (Màn 3):&lt;/strong&gt; Quá trình bạn &quot;nạp ngữ cảnh thực tế&quot; chính là việc áp dụng nguyên tắc lịch sử - cụ thể: xem xét mỗi bình luận trong không gian, thời gian và hoàn cảnh văn hóa xác định của nó. Không có chân lý trừu tượng — &lt;strong style=&quot;color:var(--accent-gold)&quot;&gt;thực tiễn là tiêu chuẩn duy nhất của chân lý.&lt;/strong&gt;&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 

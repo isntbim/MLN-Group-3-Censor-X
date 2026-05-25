@@ -10,6 +10,13 @@
   <div class="sys-msg warn" style="margin-top:8px">Mỗi quyết định sai lầm sẽ ảnh hưởng trực tiếp đến Điểm Tín nhiệm Cộng đồng. Nếu tín nhiệm chạm 0 → Hệ thống sụp đổ hoàn toàn.</div>
 </div>
 
+<div class="marx-quote" style="text-align:left;margin-bottom:22px">
+  <div style="font-family:var(--font-mono);font-size:0.7rem;color:var(--accent-gold);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px">✦ Lý thuyết liên hệ — Tính khách quan của Chân lý</div>
+  <blockquote style="font-size:1rem">"Chân lý là tri thức phù hợp với hiện thực khách quan và được thực tiễn kiểm nghiệm. Nội dung phản ánh của chân lý là khách quan — không phụ thuộc vào ý chí hay lợi ích chủ quan của con người."</blockquote>
+  <div class="attribution">— Triết học Mác - Lênin (Bộ GD&ĐT) —</div>
+  <div style="font-size:0.85rem;color:var(--text-secondary);margin-top:10px;font-family:var(--font-body);line-height:1.75">⟶ <em>Trong màn này, hãy quan sát: liệu hệ thống CENSOR-X có phán xét dựa trên <strong>hiện thực khách quan</strong> của từng bình luận, hay chỉ dựa trên các quy tắc logic hình thức chủ quan của nó?</em></div>
+</div>
+
 <div style="text-align:center">
   <<link '<span class="btn btn-primary btn-glow">▸ BẮT ĐẦU DUYỆT</span>'>>
     <<goto "Act1_Review">>
@@ -93,6 +100,15 @@
     Điểm Tín nhiệm: <strong style="color:var(--accent-gold)"><<= $publicTrust>></strong>/100 &nbsp;|&nbsp; Lượt đã xử lý: <strong style="color:var(--accent-gold)"><<= $turn>></strong>/5
   </div>
 </div>
+
+<<if $lastFeedbackType is "error">>
+<div class="marx-quote" style="text-align:left;margin-top:14px">
+  <div style="font-family:var(--font-mono);font-size:0.7rem;color:var(--accent-red);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px">✦ Lý thuyết liên hệ — Tính cụ thể của Chân lý</div>
+  <blockquote style="font-size:0.95rem">"Không có chân lý trừu tượng, chung chung — chân lý luôn là cụ thể. Chân lý phản ánh sự vật trong một điều kiện cụ thể, hoàn cảnh lịch sử cụ thể, không gian và thời gian xác định. Thoát ly những điều kiện cụ thể này sẽ không phản ánh đúng đắn sự vật."</blockquote>
+  <div class="attribution">— Triết học Mác - Lênin (Bộ GD&ĐT) —</div>
+  <div style="font-size:0.85rem;color:var(--text-secondary);margin-top:10px;font-family:var(--font-body);line-height:1.75">⟶ <em>CENSOR-X đã áp dụng quy tắc chung chung, bỏ qua <strong>ngữ cảnh cụ thể</strong> của bình luận — đó chính là sai lầm của tư duy giáo điều, xa rời thực tiễn mà V.I.Lênin gọi là "rập khuôn, máy móc".</em></div>
+</div>
+<</if>>
 
 <div style="text-align:center">\
 <<if $publicTrust lte 0>>\
