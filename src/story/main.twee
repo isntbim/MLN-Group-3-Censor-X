@@ -58,6 +58,7 @@ CENSOR-X: Thực Tiễn và Chân Lý
     <div class="logo">CENSOR-X</div>
   </div>
   <div class="tagline">AI CONTENT MODERATION SYSTEM v3.7.1</div>
+  <div class="game-img-container"><img class="game-img" src="assets/cover.png" alt="CENSOR-X Cover Image"></div>
   <div class="description">
     Bạn là kỹ sư hệ thống vừa được bổ nhiệm vào vị trí Quản trị viên cấp cao của nền tảng mạng xã hội lớn nhất Việt Nam.
     Nhiệm vụ: Giám sát hệ thống kiểm duyệt nội dung AI — <strong style="color:var(--accent-gold)">CENSOR-X</strong>.

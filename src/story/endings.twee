@@ -1,58 +1,95 @@
 :: WinScreen
 <<set $gamePhase to "end">>\
-<div class="win-screen">
+<div class="win-screen" style="justify-content:flex-start;padding-top:10px">
   <h1>✦ HỆ THỐNG KHÔI PHỤC HOÀN TOÀN ✦</h1>
+  <div class="game-img-container"><img class="game-img" src="assets/system_success.png" alt="System Restored Successfully"></div>
 
-  <div class="end-message">
-    <div class="sys-msg ok" style="text-align:left;margin-bottom:16px">[SUCCESS]: Hệ thống vận hành hoàn hảo. Nhận thức của AI đã đạt tới Chân lý khách quan nhờ được soi sáng bởi Thực tiễn nhân loại.</div>
-  </div>
-
-  <div class="marx-quote" style="text-align:left">
+<<timed 0.6s t8n>>\
+  <div class="sys-msg ok" style="text-align:left;max-width:640px">
+    [SUCCESS]: Hệ thống vận hành hoàn hảo. Nhận thức của AI đã đạt tới Chân lý khách quan nhờ được soi sáng bởi Thực tiễn nhân loại.
+  </div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<<next 1.4s t8n>>\
+  <div class="marx-quote" style="text-align:left;max-width:640px">
     <blockquote>"Vấn đề tìm hiểu xem tư duy của con người có thể đạt tới chân lý khách quan không, hoàn toàn không phải là một vấn đề lý luận mà là một vấn đề thực tiễn."</blockquote>
     <div class="attribution">— Karl Marx —</div>
-  </div>
-
-  <div class="panel" style="text-align:left;margin-top:24px;max-width:600px">
-    <div class="panel-header" style="color:var(--accent-green)">Kết luận Triết học — 3 Tính chất của Chân lý qua hành trình CENSOR-X</div>
+  </div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<<next 1.6s t8n>>\
+  <div class="panel" style="text-align:left;max-width:640px">
+    <div class="panel-header" style="color:var(--accent-gold)">① Tính khách quan — Màn 1</div>
     <div style="font-size:0.9rem;line-height:1.9;color:var(--text-secondary)">
-      <p><strong style="color:var(--accent-gold)">① Tính khách quan (Màn 1):</strong> Thuật toán CENSOR-X ban đầu phán xét dựa trên quy tắc logic chủ quan của mình — không phản ánh hiện thực khách quan của từng bình luận. Chân lý không phụ thuộc vào ý chí hay lợi ích của hệ thống, mà phải phù hợp với thực tại khách quan.</p>
-      <p style="margin-top:12px"><strong style="color:var(--accent-yellow)">② Tính tương đối & Tuyệt đối (Màn 2):</strong> CENSOR-X "đúng" trong môi trường thử nghiệm giới hạn — đó là chân lý tương đối. Khi mở rộng quy mô thực tế, những giới hạn đó bộc lộ. Nhận thức phải không ngừng vận động, phát triển để tiệm cận chân lý tuyệt đối.</p>
-      <p style="margin-top:12px"><strong style="color:var(--accent-green)">③ Tính cụ thể (Màn 3):</strong> Quá trình bạn "nạp ngữ cảnh thực tế" chính là việc áp dụng nguyên tắc lịch sử - cụ thể: xem xét mỗi bình luận trong không gian, thời gian và hoàn cảnh văn hóa xác định của nó. Không có chân lý trừu tượng — <strong style="color:var(--accent-gold)">thực tiễn là tiêu chuẩn duy nhất của chân lý.</strong></p>
+      Thuật toán CENSOR-X ban đầu phán xét dựa trên quy tắc logic <em>chủ quan</em> của mình — không phản ánh hiện thực khách quan của từng bình luận. Chân lý không phụ thuộc vào ý chí hay lợi ích của hệ thống, mà phải phù hợp với thực tại khách quan.
     </div>
-  </div>
-
+  </div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<<next 1.6s t8n>>\
+  <div class="panel" style="text-align:left;max-width:640px">
+    <div class="panel-header" style="color:var(--accent-yellow)">② Tính tương đối &amp; Tuyệt đối — Màn 2</div>
+    <div style="font-size:0.9rem;line-height:1.9;color:var(--text-secondary)">
+      CENSOR-X "đúng" trong môi trường thử nghiệm giới hạn — đó là <em>chân lý tương đối</em>. Khi mở rộng quy mô thực tế, những giới hạn đó bộc lộ. Nhận thức phải không ngừng vận động, phát triển để tiệm cận chân lý tuyệt đối.
+    </div>
+  </div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<<next 1.6s t8n>>\
+  <div class="panel" style="text-align:left;max-width:640px">
+    <div class="panel-header" style="color:var(--accent-green)">③ Tính cụ thể — Màn 3</div>
+    <div style="font-size:0.9rem;line-height:1.9;color:var(--text-secondary)">
+      Quá trình bạn "nạp ngữ cảnh thực tế" chính là việc áp dụng nguyên tắc lịch sử - cụ thể: xem xét mỗi bình luận trong không gian, thời gian và hoàn cảnh văn hóa xác định của nó. Không có chân lý trừu tượng — <strong style="color:var(--accent-gold)">thực tiễn là tiêu chuẩn duy nhất của chân lý.</strong>
+    </div>
+  </div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<<next 1.4s t8n>>\
   <div style="margin-top:28px">
-    <<link '<span class="btn btn-primary">↻ CHƠI LẠI TỪ ĐẦU</span>'>>
+    <<link '<span class="btn btn-primary btn-glow">↻ CHƠI LẠI TỪ ĐẦU</span>'>>
       <<run Engine.restart()>>
     <</link>>
-  </div>
+  </div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<</timed>>
 </div>
 
 :: GameOver
 <<set $gamePhase to "end">>\
-<div class="gameover-screen">
+<div class="gameover-screen" style="justify-content:flex-start;padding-top:10px">
   <h1>HỆ THỐNG SỤP ĐỔ</h1>
+  <div class="game-img-container"><img class="game-img" src="assets/system_failure.png" alt="System Failure and Shutdown"></div>
 
-  <div class="end-message">
-    <div class="sys-msg error" style="text-align:left;margin-bottom:16px">[FATAL]: Điểm Tín nhiệm Cộng đồng đã chạm mức 0. Nền tảng mạng xã hội bị tẩy chay hoàn toàn và phải ngừng hoạt động vĩnh viễn.</div>
-  </div>
-
-  <div class="panel" style="text-align:left;max-width:600px">
-    <div class="panel-header" style="color:var(--accent-red)">Nguyên nhân thất bại</div>
-    <div style="font-size:0.9rem;line-height:1.9;color:var(--text-secondary)">
-      <p>Hệ thống kiểm duyệt đã áp dụng lý luận máy móc, giáo điều vào thực tiễn mà không có sự kiểm chứng, dẫn đến hàng loạt sai lầm nghiêm trọng.</p>
-      <p style="margin-top:12px">Khi lý luận xa rời thực tiễn, hành động sẽ tất yếu sai lầm — và hậu quả thực tế là điều không thể tránh khỏi.</p>
-    </div>
-  </div>
-
-  <div class="marx-quote" style="text-align:left;margin-top:20px;max-width:600px">
+<<timed 0.6s t8n>>\
+  <div class="sys-msg error" style="text-align:left;max-width:640px">
+    [FATAL]: Điểm Tín nhiệm Cộng đồng đã chạm mức 0. Nền tảng mạng xã hội bị tẩy chay hoàn toàn và phải ngừng hoạt động vĩnh viễn.
+  </div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<<next 1.4s t8n>>\
+  <div class="sys-msg error" style="text-align:left;max-width:640px">
+    [DIAGNOSIS]: Hệ thống kiểm duyệt đã áp dụng lý luận máy móc, giáo điều vào thực tiễn mà không có sự kiểm chứng, dẫn đến hàng loạt sai lầm nghiêm trọng.
+  </div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<<next 1.4s t8n>>\
+  <div class="sys-msg warn" style="text-align:left;max-width:640px">
+    [INSIGHT]: Khi lý luận xa rời thực tiễn, hành động sẽ tất yếu sai lầm — và hậu quả thực tế là điều không thể tránh khỏi.
+  </div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<<next 1.6s t8n>>\
+  <div class="marx-quote" style="text-align:left;max-width:640px">
     <blockquote>"Vấn đề tìm hiểu xem tư duy của con người có thể đạt tới chân lý khách quan không, hoàn toàn không phải là một vấn đề lý luận mà là một vấn đề thực tiễn."</blockquote>
     <div class="attribution">— Karl Marx —</div>
-  </div>
-
+  </div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<<next 1.6s t8n>>\
+  <div class="panel" style="text-align:left;max-width:640px">
+    <div class="panel-header" style="color:var(--accent-red)">Bài học rút ra</div>
+    <div style="font-size:0.9rem;line-height:1.9;color:var(--text-secondary)">
+      <strong style="color:var(--accent-gold)">Thực tiễn là tiêu chuẩn của chân lý.</strong> Mọi lý luận, dù chặt chẽ đến đâu, đều phải được đưa vào kiểm nghiệm thực tiễn. Một hệ thống sống tách rời với thực tiễn xã hội — dù đúng về logic — cũng sẽ tất yếu sụp đổ.
+    </div>
+  </div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<<next 1.4s t8n>>\
   <div style="margin-top:28px">
-    <<link '<span class="btn btn-danger">↻ CHƠI LẠI TỪ ĐẦU</span>'>>
+    <<link '<span class="btn btn-danger btn-glow">↻ CHƠI LẠI TỪ ĐẦU</span>'>>
       <<run Engine.restart()>>
     <</link>>
-  </div>
+  </div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<</timed>>
 </div>

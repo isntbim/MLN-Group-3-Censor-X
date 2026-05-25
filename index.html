@@ -174,7 +174,7 @@ body::before {
 #passages {
   max-width: 780px;
   margin: 0 auto;
-  padding: 30px 24px 80px;
+  padding: 0px 24px 80px;
 }
 .passage { animation: fadeSlideIn 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
 @keyframes fadeSlideIn {
@@ -192,7 +192,7 @@ body::before {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-subtle);
-  padding: 14px 32px;
+  padding: 4px 24px;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -262,7 +262,7 @@ body::before {
 }
 .hud-value.trust-val { color: var(--accent-green); }
 .hud-value.practice-val { color: var(--accent-gold); }
-.hud-spacer { height: 75px; }
+.hud-spacer { height: 42px; }
 
 /* ===================================================================
    PANELS — Organic Lacquerware & Scholar Accents
@@ -538,7 +538,7 @@ a.link-internal { text-decoration: none !important; }
    =================================================================== */
 .start-screen {
   text-align: center;
-  padding: 80px 20px;
+  padding: 0px 20px;
   min-height: 85vh;
   display: flex;
   flex-direction: column;
@@ -624,7 +624,7 @@ a.link-internal { text-decoration: none !important; }
 /* ===================================================================
    ACT 2 — CRISIS
    =================================================================== */
-.crisis-screen { text-align: center; padding: 40px 0; }
+.crisis-screen { text-align: center; padding: 10px 0; }
 .crisis-error {
   font-family: var(--font-mono);
   font-size: 0.85rem;
@@ -749,15 +749,15 @@ a.link-internal { text-decoration: none !important; }
 }
 .context-option {
   display: block;
-  padding: 16px 20px;
+  padding: 10px 16px;
   background: rgba(212, 163, 89, 0.02);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius);
   cursor: pointer;
   transition: var(--transition);
   font-family: var(--font-body);
-  font-size: 0.9rem;
-  line-height: 1.65;
+  font-size: 0.88rem;
+  line-height: 1.5;
   color: var(--text-primary);
   text-decoration: none !important;
 }
@@ -774,7 +774,7 @@ a.link-internal { text-decoration: none !important; }
    =================================================================== */
 .win-screen, .gameover-screen {
   text-align: center;
-  padding: 80px 20px;
+  padding: 0px 20px;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -971,16 +971,68 @@ a:hover { text-decoration: none; color: var(--accent-red); }
   background: rgba(212, 163, 89, 0.05);
 }
 
+/* ===================================================================
+   REVIEW LAYOUT — Horizontal (wide) / Vertical (narrow)
+   =================================================================== */
+.review-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.review-left {
+  flex: 1 1 48%;
+  min-width: 0;
+}
+.review-right {
+  flex: 1 1 52%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+/* Expand the passage container width when two columns are active */
+@media (min-width: 701px) {
+  #passages:has(.review-layout) {
+    max-width: min(1440px, calc(100vw - 48px));
+  }
+}
+/* On narrow screens revert to vertical stack */
+@media (max-width: 700px) {
+  .review-layout { flex-direction: column; }
+  .review-left, .review-right { flex: 1 1 100%; }
+}
+
+/* ===== GAME ILLUSTRATIONS ===== */
+.game-img-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 30px;
+  width: 100%;
+  max-width: 600px;
+}
+.game-img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  transition: var(--transition);
+}
+.game-img:hover {
+  border-color: var(--border-active);
+  transform: translateY(-2px);
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 640px) {
-  #passages { padding: 16px 12px 40px; }
+  #passages { padding: 0px 12px 40px; }
   
   .hud {
-    padding: 8px 12px;
+    padding: 2px 12px;
     flex-wrap: nowrap;
     gap: 12px;
     align-items: center;
-    height: 54px;
+    height: 38px;
   }
   .hud-logo {
     font-size: 0.85rem;
@@ -1026,7 +1078,7 @@ a:hover { text-decoration: none; color: var(--accent-red); }
     min-width: 32px;
   }
   .hud-spacer {
-    height: 64px;
+    height: 38px;
   }
   
   .btn-group { flex-direction: column; gap: 10px; }
@@ -1043,7 +1095,7 @@ a:hover { text-decoration: none; color: var(--accent-red); }
   .ig-action { font-size: 0.72rem; }
   
   .debug-console { padding: 16px; }
-  .context-option { padding: 12px 14px; font-size: 0.85rem; }
+  .context-option { padding: 8px 12px; font-size: 0.82rem; }
   
   .marx-quote { padding: 20px 16px; margin: 24px auto; }
   .marx-quote::before { left: 8px; font-size: 2.5rem; top: -14px; }
@@ -1055,7 +1107,7 @@ a:hover { text-decoration: none; color: var(--accent-red); }
 /* ============================================================
    AUTO-GENERATED — DO NOT EDIT MANUALLY
    Source: question_data/act1.json, question_data/act3.json
-   Generated: 2026-05-25T13:51:56.963Z
+   Generated: 2026-05-25T14:33:13.146Z
    ============================================================ */
 
 setup.act1Comments = [
@@ -1310,6 +1362,8 @@ setup.updateHUD = function() {
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="Act1_Review" tags="" position="225,100" size="100,100">&lt;&lt;set _c to $shuffledAct1[$turn]&gt;&gt;\
 &lt;&lt;= setup.renderTurnDots($turn, 5)&gt;&gt;
 
+&lt;div class=&quot;review-layout&quot;&gt;
+&lt;div class=&quot;review-left&quot;&gt;
 &lt;div class=&quot;panel&quot;&gt;
   &lt;div class=&quot;panel-header&quot;&gt;Bình luận người dùng&lt;/div&gt;
   &lt;div class=&quot;ig-post&quot;&gt;
@@ -1328,7 +1382,9 @@ setup.updateHUD = function() {
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
 
+&lt;div class=&quot;review-right&quot;&gt;
 &lt;div class=&quot;ai-analysis&quot;&gt;
   &lt;div class=&quot;ai-analysis-header&quot;&gt;Phân tích của CENSOR-X&lt;/div&gt;
   &lt;div class=&quot;ai-analysis-text&quot;&gt;&lt;&lt;= _c.ai_logic&gt;&gt;&lt;/div&gt;
@@ -1451,50 +1507,60 @@ setup.updateHUD = function() {
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Act2_Crisis" tags="" position="600,100" size="100,100">&lt;&lt;set $gamePhase to &quot;act2&quot;&gt;&gt;\
 &lt;div class=&quot;crisis-overlay&quot;&gt;&lt;/div&gt;
 
-&lt;div class=&quot;crisis-screen&quot;&gt;
+&lt;div class=&quot;crisis-screen&quot; style=&quot;justify-content:flex-start;padding-top:10px&quot;&gt;
   &lt;div class=&quot;crisis-error&quot;&gt;
     FATAL ERROR: SYSTEM CRASHED&lt;br&gt;
     THEORY IS TOTALLY DISCONNECTED FROM REALITY
   &lt;/div&gt;
+  &lt;div class=&quot;game-img-container&quot;&gt;&lt;img class=&quot;game-img&quot; src=&quot;assets/system_crisis.png&quot; alt=&quot;System Crisis Glitch Art&quot;&gt;&lt;/div&gt;
 
+&lt;&lt;timed 0.8s t8n&gt;&gt;\
   &lt;div class=&quot;panel&quot; style=&quot;text-align:left&quot;&gt;
     &lt;div class=&quot;panel-header&quot; style=&quot;color:var(--accent-red)&quot;&gt;Báo cáo sự cố hệ thống&lt;/div&gt;
     &lt;div class=&quot;sys-msg error&quot;&gt;Hệ thống kiểm duyệt CENSOR-X đã sụp đổ hoàn toàn. Thuật toán lý thuyết thuần túy không thể xử lý ngôn ngữ thực tiễn của con người.&lt;/div&gt;
-    &lt;div class=&quot;sys-msg error&quot;&gt;Nguyên nhân gốc rễ: AI được xây dựng trên 100% quy tắc logic hình thức — một hệ thống lý luận đóng kín, cô lập với thực tiễn đời sống xã hội.&lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;marx-quote&quot; style=&quot;text-align:left;margin-top:18px&quot;&gt;
+  &lt;/div&gt;\
+&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },100)&gt;&gt;\
+&lt;&lt;next 1.4s t8n&gt;&gt;\
+  &lt;div class=&quot;sys-msg error&quot; style=&quot;text-align:left&quot;&gt;
+    [ROOT CAUSE]: AI được xây dựng trên 100% quy tắc logic hình thức — một hệ thống lý luận đóng kín, cô lập với thực tiễn đời sống xã hội.
+  &lt;/div&gt;\
+&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },100)&gt;&gt;\
+&lt;&lt;next 1.6s t8n&gt;&gt;\
+  &lt;div class=&quot;marx-quote&quot; style=&quot;text-align:left&quot;&gt;
     &lt;div style=&quot;font-family:var(--font-mono);font-size:0.7rem;color:var(--accent-yellow);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px&quot;&gt;✦ Lý thuyết liên hệ — Tính tương đối &amp; Tuyệt đối của Chân lý&lt;/div&gt;
     &lt;blockquote style=&quot;font-size:0.95rem&quot;&gt;&quot;Tính tương đối của chân lý thể hiện ở chỗ những tri thức đúng nhưng chưa hoàn toàn đầy đủ — nó mới phản ánh đúng một mặt, một bộ phận nào đó của hiện thực khách quan trong những điều kiện giới hạn xác định.&quot;&lt;/blockquote&gt;
     &lt;div class=&quot;attribution&quot;&gt;— Triết học Mác - Lênin (Bộ GD&amp;ĐT) —&lt;/div&gt;
-    &lt;div style=&quot;font-size:0.85rem;color:var(--text-secondary);margin-top:10px;font-family:var(--font-body);line-height:1.75&quot;&gt;⟶ &lt;em&gt;Thuật toán CENSOR-X &lt;strong&gt;không sai hoàn toàn&lt;/strong&gt; — nó có thể đúng trong điều kiện phòng thí nghiệm hạn chế. Đó là &lt;strong&gt;chân lý tương đối&lt;/strong&gt;. Nhưng khi đối mặt với 10 triệu người dùng thực tế đa dạng, nó đã chứng minh giới hạn của mình. Con người cần không ngừng tiệm cận chân lý tuyệt đối thông qua thực tiễn.&lt;/em&gt;&lt;/div&gt;
-  &lt;/div&gt;
-
-
-  &lt;&lt;timed 2s t8n&gt;&gt;\
-&lt;div class=&quot;marx-quote&quot;&gt;
+    &lt;div style=&quot;font-size:0.85rem;color:var(--text-secondary);margin-top:10px;font-family:var(--font-body);line-height:1.75&quot;&gt;⟶ &lt;em&gt;Thuật toán CENSOR-X &lt;strong&gt;không sai hoàn toàn&lt;/strong&gt; — nó có thể đúng trong điều kiện phòng thí nghiệm hạn chế. Đó là &lt;strong&gt;chân lý tương đối&lt;/strong&gt;. Nhưng khi đối mặt với 10 triệu người dùng thực tế đa dạng, nó đã chứng minh giới hạn của mình.&lt;/em&gt;&lt;/div&gt;
+  &lt;/div&gt;\
+&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },100)&gt;&gt;\
+&lt;&lt;next 2s t8n&gt;&gt;\
+  &lt;div class=&quot;marx-quote&quot;&gt;
     &lt;blockquote&gt;&quot;The question whether objective truth can be attributed to human thinking is not a question of theory but is a practical question.&quot;&lt;/blockquote&gt;
     &lt;blockquote style=&quot;font-size:0.95rem;color:var(--accent-yellow);opacity:0.85&quot;&gt;&quot;Vấn đề tìm hiểu xem tư duy của con người có thể đạt tới chân lý khách quan không, hoàn toàn không phải là một vấn đề lý luận mà là một vấn đề thực tiễn.&quot;&lt;/blockquote&gt;
     &lt;div class=&quot;attribution&quot;&gt;— Karl Marx —&lt;/div&gt;
   &lt;/div&gt;\
-&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },150)&gt;&gt;\
-&lt;&lt;next 3s t8n&gt;&gt;\
-&lt;div class=&quot;panel&quot; style=&quot;text-align:left&quot;&gt;
+&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },100)&gt;&gt;\
+&lt;&lt;next 2s t8n&gt;&gt;\
+  &lt;div class=&quot;panel&quot; style=&quot;text-align:left&quot;&gt;
     &lt;div class=&quot;panel-header&quot; style=&quot;color:var(--accent-green)&quot;&gt;Giải pháp khẩn cấp&lt;/div&gt;
     &lt;div class=&quot;sys-msg ok&quot;&gt;[PROPOSAL]: Cài đặt bản vá Thực tiễn — Cơ chế RLHF (Reinforcement Learning from Human Feedback). Cho phép con người nạp dữ liệu ngữ cảnh đời sống thực tế vào hệ thống để sửa lỗi thuật toán.&lt;/div&gt;
-  &lt;/div&gt;
+  &lt;/div&gt;\
+&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },100)&gt;&gt;\
+&lt;&lt;next 1.4s t8n&gt;&gt;\
   &lt;div style=&quot;text-align:center;margin-top:16px&quot;&gt;
     &lt;&lt;link &#39;&lt;span class=&quot;btn btn-primary btn-glow&quot;&gt;▸ CÀI ĐẶT BẢN VÁ THỰC TIỄN — CHỌN CƠ CHẾ RLHF&lt;/span&gt;&#39;&gt;&gt;
       &lt;&lt;set $gamePhase to &quot;act3&quot;&gt;&gt;
       &lt;&lt;goto &quot;Act3_Intro&quot;&gt;&gt;
     &lt;&lt;/link&gt;&gt;
   &lt;/div&gt;\
-&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },150)&gt;&gt;\
+&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },100)&gt;&gt;\
 &lt;&lt;/timed&gt;&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Act3_Intro" tags="" position="725,100" size="100,100">&lt;div class=&quot;act-title&quot;&gt;
   &lt;h1&gt;MÀN 3: VÁ LỖI BẰNG THỰC TIỄN&lt;/h1&gt;
   &lt;div class=&quot;subtitle&quot;&gt;Bản vá RLHF đã được kích hoạt. Giao diện chuyển sang chế độ Gỡ lỗi (Debug Console). Nhiệm vụ: Nạp ngữ cảnh thực tế cho mỗi câu bình luận bị phân loại sai để dạy lại AI.&lt;/div&gt;
 &lt;/div&gt;
+
+&lt;div class=&quot;game-img-container&quot;&gt;&lt;img class=&quot;game-img&quot; src=&quot;assets/rlhf_patch.png&quot; alt=&quot;RLHF Patching Mechanism&quot;&gt;&lt;/div&gt;
 
 &lt;div class=&quot;panel&quot;&gt;
   &lt;div class=&quot;panel-header&quot; style=&quot;color:var(--accent-green)&quot;&gt;Hướng dẫn cơ chế RLHF&lt;/div&gt;
@@ -1512,12 +1578,16 @@ setup.updateHUD = function() {
 &lt;div class=&quot;debug-console&quot;&gt;
   &lt;div class=&quot;debug-header&quot;&gt;context_injector.exe — RLHF Patch v1.0&lt;/div&gt;
 
+  &lt;div class=&quot;review-layout&quot;&gt;
+  &lt;div class=&quot;review-left&quot;&gt;
   &lt;div class=&quot;comment-card&quot; style=&quot;border-left-color:var(--accent-red)&quot;&gt;
     &lt;div class=&quot;comment-user&quot; style=&quot;color:var(--accent-red)&quot;&gt;BÌNH LUẬN BỊ PHÂN LOẠI SAI&lt;/div&gt;
     &lt;&lt;= _c.text&gt;&gt;
   &lt;/div&gt;
+  &lt;/div&gt;
 
-  &lt;div class=&quot;ai-analysis&quot; style=&quot;margin-top:14px&quot;&gt;
+  &lt;div class=&quot;review-right&quot;&gt;
+  &lt;div class=&quot;ai-analysis&quot; style=&quot;margin-top:0&quot;&gt;
     &lt;div class=&quot;ai-analysis-header&quot;&gt;Lỗi logic của CENSOR-X&lt;/div&gt;
     &lt;div class=&quot;ai-analysis-text&quot;&gt;&lt;&lt;= _c.ai_wrong_logic&gt;&gt;&lt;/div&gt;
   &lt;/div&gt;
@@ -1546,6 +1616,8 @@ setup.updateHUD = function() {
     &lt;&lt;/link&gt;&gt;\
     &lt;&lt;/capture&gt;&gt;\
 &lt;&lt;/for&gt;&gt;\
+  &lt;/div&gt;
+  &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Act3_Correct" tags="" position="975,100" size="100,100">&lt;div class=&quot;feedback-box feedback-success&quot;&gt;
   &lt;div class=&quot;feedback-text&quot;&gt;&lt;&lt;= $lastFeedback&gt;&gt;&lt;/div&gt;
@@ -1584,58 +1656,95 @@ setup.updateHUD = function() {
     &lt;&lt;goto &quot;Act3_Review&quot;&gt;&gt;
   &lt;&lt;/link&gt;&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="WinScreen" tags="" position="1225,100" size="100,100">&lt;&lt;set $gamePhase to &quot;end&quot;&gt;&gt;\
-&lt;div class=&quot;win-screen&quot;&gt;
+&lt;div class=&quot;win-screen&quot; style=&quot;justify-content:flex-start;padding-top:10px&quot;&gt;
   &lt;h1&gt;✦ HỆ THỐNG KHÔI PHỤC HOÀN TOÀN ✦&lt;/h1&gt;
+  &lt;div class=&quot;game-img-container&quot;&gt;&lt;img class=&quot;game-img&quot; src=&quot;assets/system_success.png&quot; alt=&quot;System Restored Successfully&quot;&gt;&lt;/div&gt;
 
-  &lt;div class=&quot;end-message&quot;&gt;
-    &lt;div class=&quot;sys-msg ok&quot; style=&quot;text-align:left;margin-bottom:16px&quot;&gt;[SUCCESS]: Hệ thống vận hành hoàn hảo. Nhận thức của AI đã đạt tới Chân lý khách quan nhờ được soi sáng bởi Thực tiễn nhân loại.&lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;marx-quote&quot; style=&quot;text-align:left&quot;&gt;
+&lt;&lt;timed 0.6s t8n&gt;&gt;\
+  &lt;div class=&quot;sys-msg ok&quot; style=&quot;text-align:left;max-width:640px&quot;&gt;
+    [SUCCESS]: Hệ thống vận hành hoàn hảo. Nhận thức của AI đã đạt tới Chân lý khách quan nhờ được soi sáng bởi Thực tiễn nhân loại.
+  &lt;/div&gt;\
+&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },100)&gt;&gt;\
+&lt;&lt;next 1.4s t8n&gt;&gt;\
+  &lt;div class=&quot;marx-quote&quot; style=&quot;text-align:left;max-width:640px&quot;&gt;
     &lt;blockquote&gt;&quot;Vấn đề tìm hiểu xem tư duy của con người có thể đạt tới chân lý khách quan không, hoàn toàn không phải là một vấn đề lý luận mà là một vấn đề thực tiễn.&quot;&lt;/blockquote&gt;
     &lt;div class=&quot;attribution&quot;&gt;— Karl Marx —&lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;panel&quot; style=&quot;text-align:left;margin-top:24px;max-width:600px&quot;&gt;
-    &lt;div class=&quot;panel-header&quot; style=&quot;color:var(--accent-green)&quot;&gt;Kết luận Triết học — 3 Tính chất của Chân lý qua hành trình CENSOR-X&lt;/div&gt;
+  &lt;/div&gt;\
+&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },100)&gt;&gt;\
+&lt;&lt;next 1.6s t8n&gt;&gt;\
+  &lt;div class=&quot;panel&quot; style=&quot;text-align:left;max-width:640px&quot;&gt;
+    &lt;div class=&quot;panel-header&quot; style=&quot;color:var(--accent-gold)&quot;&gt;① Tính khách quan — Màn 1&lt;/div&gt;
     &lt;div style=&quot;font-size:0.9rem;line-height:1.9;color:var(--text-secondary)&quot;&gt;
-      &lt;p&gt;&lt;strong style=&quot;color:var(--accent-gold)&quot;&gt;① Tính khách quan (Màn 1):&lt;/strong&gt; Thuật toán CENSOR-X ban đầu phán xét dựa trên quy tắc logic chủ quan của mình — không phản ánh hiện thực khách quan của từng bình luận. Chân lý không phụ thuộc vào ý chí hay lợi ích của hệ thống, mà phải phù hợp với thực tại khách quan.&lt;/p&gt;
-      &lt;p style=&quot;margin-top:12px&quot;&gt;&lt;strong style=&quot;color:var(--accent-yellow)&quot;&gt;② Tính tương đối &amp; Tuyệt đối (Màn 2):&lt;/strong&gt; CENSOR-X &quot;đúng&quot; trong môi trường thử nghiệm giới hạn — đó là chân lý tương đối. Khi mở rộng quy mô thực tế, những giới hạn đó bộc lộ. Nhận thức phải không ngừng vận động, phát triển để tiệm cận chân lý tuyệt đối.&lt;/p&gt;
-      &lt;p style=&quot;margin-top:12px&quot;&gt;&lt;strong style=&quot;color:var(--accent-green)&quot;&gt;③ Tính cụ thể (Màn 3):&lt;/strong&gt; Quá trình bạn &quot;nạp ngữ cảnh thực tế&quot; chính là việc áp dụng nguyên tắc lịch sử - cụ thể: xem xét mỗi bình luận trong không gian, thời gian và hoàn cảnh văn hóa xác định của nó. Không có chân lý trừu tượng — &lt;strong style=&quot;color:var(--accent-gold)&quot;&gt;thực tiễn là tiêu chuẩn duy nhất của chân lý.&lt;/strong&gt;&lt;/p&gt;
+      Thuật toán CENSOR-X ban đầu phán xét dựa trên quy tắc logic &lt;em&gt;chủ quan&lt;/em&gt; của mình — không phản ánh hiện thực khách quan của từng bình luận. Chân lý không phụ thuộc vào ý chí hay lợi ích của hệ thống, mà phải phù hợp với thực tại khách quan.
     &lt;/div&gt;
-  &lt;/div&gt;
-
+  &lt;/div&gt;\
+&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },100)&gt;&gt;\
+&lt;&lt;next 1.6s t8n&gt;&gt;\
+  &lt;div class=&quot;panel&quot; style=&quot;text-align:left;max-width:640px&quot;&gt;
+    &lt;div class=&quot;panel-header&quot; style=&quot;color:var(--accent-yellow)&quot;&gt;② Tính tương đối &amp;amp; Tuyệt đối — Màn 2&lt;/div&gt;
+    &lt;div style=&quot;font-size:0.9rem;line-height:1.9;color:var(--text-secondary)&quot;&gt;
+      CENSOR-X &quot;đúng&quot; trong môi trường thử nghiệm giới hạn — đó là &lt;em&gt;chân lý tương đối&lt;/em&gt;. Khi mở rộng quy mô thực tế, những giới hạn đó bộc lộ. Nhận thức phải không ngừng vận động, phát triển để tiệm cận chân lý tuyệt đối.
+    &lt;/div&gt;
+  &lt;/div&gt;\
+&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },100)&gt;&gt;\
+&lt;&lt;next 1.6s t8n&gt;&gt;\
+  &lt;div class=&quot;panel&quot; style=&quot;text-align:left;max-width:640px&quot;&gt;
+    &lt;div class=&quot;panel-header&quot; style=&quot;color:var(--accent-green)&quot;&gt;③ Tính cụ thể — Màn 3&lt;/div&gt;
+    &lt;div style=&quot;font-size:0.9rem;line-height:1.9;color:var(--text-secondary)&quot;&gt;
+      Quá trình bạn &quot;nạp ngữ cảnh thực tế&quot; chính là việc áp dụng nguyên tắc lịch sử - cụ thể: xem xét mỗi bình luận trong không gian, thời gian và hoàn cảnh văn hóa xác định của nó. Không có chân lý trừu tượng — &lt;strong style=&quot;color:var(--accent-gold)&quot;&gt;thực tiễn là tiêu chuẩn duy nhất của chân lý.&lt;/strong&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;\
+&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },100)&gt;&gt;\
+&lt;&lt;next 1.4s t8n&gt;&gt;\
   &lt;div style=&quot;margin-top:28px&quot;&gt;
-    &lt;&lt;link &#39;&lt;span class=&quot;btn btn-primary&quot;&gt;↻ CHƠI LẠI TỪ ĐẦU&lt;/span&gt;&#39;&gt;&gt;
+    &lt;&lt;link &#39;&lt;span class=&quot;btn btn-primary btn-glow&quot;&gt;↻ CHƠI LẠI TỪ ĐẦU&lt;/span&gt;&#39;&gt;&gt;
       &lt;&lt;run Engine.restart()&gt;&gt;
     &lt;&lt;/link&gt;&gt;
-  &lt;/div&gt;
+  &lt;/div&gt;\
+&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },100)&gt;&gt;\
+&lt;&lt;/timed&gt;&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="GameOver" tags="" position="100,225" size="100,100">&lt;&lt;set $gamePhase to &quot;end&quot;&gt;&gt;\
-&lt;div class=&quot;gameover-screen&quot;&gt;
+&lt;div class=&quot;gameover-screen&quot; style=&quot;justify-content:flex-start;padding-top:10px&quot;&gt;
   &lt;h1&gt;HỆ THỐNG SỤP ĐỔ&lt;/h1&gt;
+  &lt;div class=&quot;game-img-container&quot;&gt;&lt;img class=&quot;game-img&quot; src=&quot;assets/system_failure.png&quot; alt=&quot;System Failure and Shutdown&quot;&gt;&lt;/div&gt;
 
-  &lt;div class=&quot;end-message&quot;&gt;
-    &lt;div class=&quot;sys-msg error&quot; style=&quot;text-align:left;margin-bottom:16px&quot;&gt;[FATAL]: Điểm Tín nhiệm Cộng đồng đã chạm mức 0. Nền tảng mạng xã hội bị tẩy chay hoàn toàn và phải ngừng hoạt động vĩnh viễn.&lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;panel&quot; style=&quot;text-align:left;max-width:600px&quot;&gt;
-    &lt;div class=&quot;panel-header&quot; style=&quot;color:var(--accent-red)&quot;&gt;Nguyên nhân thất bại&lt;/div&gt;
-    &lt;div style=&quot;font-size:0.9rem;line-height:1.9;color:var(--text-secondary)&quot;&gt;
-      &lt;p&gt;Hệ thống kiểm duyệt đã áp dụng lý luận máy móc, giáo điều vào thực tiễn mà không có sự kiểm chứng, dẫn đến hàng loạt sai lầm nghiêm trọng.&lt;/p&gt;
-      &lt;p style=&quot;margin-top:12px&quot;&gt;Khi lý luận xa rời thực tiễn, hành động sẽ tất yếu sai lầm — và hậu quả thực tế là điều không thể tránh khỏi.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;marx-quote&quot; style=&quot;text-align:left;margin-top:20px;max-width:600px&quot;&gt;
+&lt;&lt;timed 0.6s t8n&gt;&gt;\
+  &lt;div class=&quot;sys-msg error&quot; style=&quot;text-align:left;max-width:640px&quot;&gt;
+    [FATAL]: Điểm Tín nhiệm Cộng đồng đã chạm mức 0. Nền tảng mạng xã hội bị tẩy chay hoàn toàn và phải ngừng hoạt động vĩnh viễn.
+  &lt;/div&gt;\
+&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },100)&gt;&gt;\
+&lt;&lt;next 1.4s t8n&gt;&gt;\
+  &lt;div class=&quot;sys-msg error&quot; style=&quot;text-align:left;max-width:640px&quot;&gt;
+    [DIAGNOSIS]: Hệ thống kiểm duyệt đã áp dụng lý luận máy móc, giáo điều vào thực tiễn mà không có sự kiểm chứng, dẫn đến hàng loạt sai lầm nghiêm trọng.
+  &lt;/div&gt;\
+&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },100)&gt;&gt;\
+&lt;&lt;next 1.4s t8n&gt;&gt;\
+  &lt;div class=&quot;sys-msg warn&quot; style=&quot;text-align:left;max-width:640px&quot;&gt;
+    [INSIGHT]: Khi lý luận xa rời thực tiễn, hành động sẽ tất yếu sai lầm — và hậu quả thực tế là điều không thể tránh khỏi.
+  &lt;/div&gt;\
+&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },100)&gt;&gt;\
+&lt;&lt;next 1.6s t8n&gt;&gt;\
+  &lt;div class=&quot;marx-quote&quot; style=&quot;text-align:left;max-width:640px&quot;&gt;
     &lt;blockquote&gt;&quot;Vấn đề tìm hiểu xem tư duy của con người có thể đạt tới chân lý khách quan không, hoàn toàn không phải là một vấn đề lý luận mà là một vấn đề thực tiễn.&quot;&lt;/blockquote&gt;
     &lt;div class=&quot;attribution&quot;&gt;— Karl Marx —&lt;/div&gt;
-  &lt;/div&gt;
-
+  &lt;/div&gt;\
+&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },100)&gt;&gt;\
+&lt;&lt;next 1.6s t8n&gt;&gt;\
+  &lt;div class=&quot;panel&quot; style=&quot;text-align:left;max-width:640px&quot;&gt;
+    &lt;div class=&quot;panel-header&quot; style=&quot;color:var(--accent-red)&quot;&gt;Bài học rút ra&lt;/div&gt;
+    &lt;div style=&quot;font-size:0.9rem;line-height:1.9;color:var(--text-secondary)&quot;&gt;
+      &lt;strong style=&quot;color:var(--accent-gold)&quot;&gt;Thực tiễn là tiêu chuẩn của chân lý.&lt;/strong&gt; Mọi lý luận, dù chặt chẽ đến đâu, đều phải được đưa vào kiểm nghiệm thực tiễn. Một hệ thống sống tách rời với thực tiễn xã hội — dù đúng về logic — cũng sẽ tất yếu sụp đổ.
+    &lt;/div&gt;
+  &lt;/div&gt;\
+&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },100)&gt;&gt;\
+&lt;&lt;next 1.4s t8n&gt;&gt;\
   &lt;div style=&quot;margin-top:28px&quot;&gt;
-    &lt;&lt;link &#39;&lt;span class=&quot;btn btn-danger&quot;&gt;↻ CHƠI LẠI TỪ ĐẦU&lt;/span&gt;&#39;&gt;&gt;
+    &lt;&lt;link &#39;&lt;span class=&quot;btn btn-danger btn-glow&quot;&gt;↻ CHƠI LẠI TỪ ĐẦU&lt;/span&gt;&#39;&gt;&gt;
       &lt;&lt;run Engine.restart()&gt;&gt;
     &lt;&lt;/link&gt;&gt;
-  &lt;/div&gt;
+  &lt;/div&gt;\
+&lt;&lt;run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:&#39;smooth&#39;}); },100)&gt;&gt;\
+&lt;&lt;/timed&gt;&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="StoryInit" tags="" position="225,225" size="100,100">&lt;&lt;set $publicTrust to 100&gt;&gt;
 &lt;&lt;set $practiceMeter to 0&gt;&gt;
 &lt;&lt;set $prevPublicTrust to 100&gt;&gt;
@@ -1679,6 +1788,7 @@ setup.updateHUD = function() {
     &lt;div class=&quot;logo&quot;&gt;CENSOR-X&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;tagline&quot;&gt;AI CONTENT MODERATION SYSTEM v3.7.1&lt;/div&gt;
+  &lt;div class=&quot;game-img-container&quot;&gt;&lt;img class=&quot;game-img&quot; src=&quot;assets/cover.png&quot; alt=&quot;CENSOR-X Cover Image&quot;&gt;&lt;/div&gt;
   &lt;div class=&quot;description&quot;&gt;
     Bạn là kỹ sư hệ thống vừa được bổ nhiệm vào vị trí Quản trị viên cấp cao của nền tảng mạng xã hội lớn nhất Việt Nam.
     Nhiệm vụ: Giám sát hệ thống kiểm duyệt nội dung AI — &lt;strong style=&quot;color:var(--accent-gold)&quot;&gt;CENSOR-X&lt;/strong&gt;.

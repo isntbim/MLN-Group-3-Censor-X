@@ -73,7 +73,7 @@ body::before {
 #passages {
   max-width: 780px;
   margin: 0 auto;
-  padding: 30px 24px 80px;
+  padding: 0px 24px 80px;
 }
 .passage { animation: fadeSlideIn 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
 @keyframes fadeSlideIn {
@@ -91,7 +91,7 @@ body::before {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-subtle);
-  padding: 14px 32px;
+  padding: 4px 24px;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -161,7 +161,7 @@ body::before {
 }
 .hud-value.trust-val { color: var(--accent-green); }
 .hud-value.practice-val { color: var(--accent-gold); }
-.hud-spacer { height: 75px; }
+.hud-spacer { height: 42px; }
 
 /* ===================================================================
    PANELS — Organic Lacquerware & Scholar Accents
@@ -437,7 +437,7 @@ a.link-internal { text-decoration: none !important; }
    =================================================================== */
 .start-screen {
   text-align: center;
-  padding: 80px 20px;
+  padding: 0px 20px;
   min-height: 85vh;
   display: flex;
   flex-direction: column;
@@ -523,7 +523,7 @@ a.link-internal { text-decoration: none !important; }
 /* ===================================================================
    ACT 2 — CRISIS
    =================================================================== */
-.crisis-screen { text-align: center; padding: 40px 0; }
+.crisis-screen { text-align: center; padding: 10px 0; }
 .crisis-error {
   font-family: var(--font-mono);
   font-size: 0.85rem;
@@ -648,15 +648,15 @@ a.link-internal { text-decoration: none !important; }
 }
 .context-option {
   display: block;
-  padding: 16px 20px;
+  padding: 10px 16px;
   background: rgba(212, 163, 89, 0.02);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius);
   cursor: pointer;
   transition: var(--transition);
   font-family: var(--font-body);
-  font-size: 0.9rem;
-  line-height: 1.65;
+  font-size: 0.88rem;
+  line-height: 1.5;
   color: var(--text-primary);
   text-decoration: none !important;
 }
@@ -673,7 +673,7 @@ a.link-internal { text-decoration: none !important; }
    =================================================================== */
 .win-screen, .gameover-screen {
   text-align: center;
-  padding: 80px 20px;
+  padding: 0px 20px;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -870,16 +870,68 @@ a:hover { text-decoration: none; color: var(--accent-red); }
   background: rgba(212, 163, 89, 0.05);
 }
 
+/* ===================================================================
+   REVIEW LAYOUT — Horizontal (wide) / Vertical (narrow)
+   =================================================================== */
+.review-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.review-left {
+  flex: 1 1 48%;
+  min-width: 0;
+}
+.review-right {
+  flex: 1 1 52%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+/* Expand the passage container width when two columns are active */
+@media (min-width: 701px) {
+  #passages:has(.review-layout) {
+    max-width: min(1440px, calc(100vw - 48px));
+  }
+}
+/* On narrow screens revert to vertical stack */
+@media (max-width: 700px) {
+  .review-layout { flex-direction: column; }
+  .review-left, .review-right { flex: 1 1 100%; }
+}
+
+/* ===== GAME ILLUSTRATIONS ===== */
+.game-img-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 30px;
+  width: 100%;
+  max-width: 600px;
+}
+.game-img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  transition: var(--transition);
+}
+.game-img:hover {
+  border-color: var(--border-active);
+  transform: translateY(-2px);
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 640px) {
-  #passages { padding: 16px 12px 40px; }
+  #passages { padding: 0px 12px 40px; }
   
   .hud {
-    padding: 8px 12px;
+    padding: 2px 12px;
     flex-wrap: nowrap;
     gap: 12px;
     align-items: center;
-    height: 54px;
+    height: 38px;
   }
   .hud-logo {
     font-size: 0.85rem;
@@ -925,7 +977,7 @@ a:hover { text-decoration: none; color: var(--accent-red); }
     min-width: 32px;
   }
   .hud-spacer {
-    height: 64px;
+    height: 38px;
   }
   
   .btn-group { flex-direction: column; gap: 10px; }
@@ -942,7 +994,7 @@ a:hover { text-decoration: none; color: var(--accent-red); }
   .ig-action { font-size: 0.72rem; }
   
   .debug-console { padding: 16px; }
-  .context-option { padding: 12px 14px; font-size: 0.85rem; }
+  .context-option { padding: 8px 12px; font-size: 0.82rem; }
   
   .marx-quote { padding: 20px 16px; margin: 24px auto; }
   .marx-quote::before { left: 8px; font-size: 2.5rem; top: -14px; }

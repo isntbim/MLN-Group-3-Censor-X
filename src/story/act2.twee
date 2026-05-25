@@ -2,44 +2,52 @@
 <<set $gamePhase to "act2">>\
 <div class="crisis-overlay"></div>
 
-<div class="crisis-screen">
+<div class="crisis-screen" style="justify-content:flex-start;padding-top:10px">
   <div class="crisis-error">
     FATAL ERROR: SYSTEM CRASHED<br>
     THEORY IS TOTALLY DISCONNECTED FROM REALITY
   </div>
+  <div class="game-img-container"><img class="game-img" src="assets/system_crisis.png" alt="System Crisis Glitch Art"></div>
 
+<<timed 0.8s t8n>>\
   <div class="panel" style="text-align:left">
     <div class="panel-header" style="color:var(--accent-red)">Báo cáo sự cố hệ thống</div>
     <div class="sys-msg error">Hệ thống kiểm duyệt CENSOR-X đã sụp đổ hoàn toàn. Thuật toán lý thuyết thuần túy không thể xử lý ngôn ngữ thực tiễn của con người.</div>
-    <div class="sys-msg error">Nguyên nhân gốc rễ: AI được xây dựng trên 100% quy tắc logic hình thức — một hệ thống lý luận đóng kín, cô lập với thực tiễn đời sống xã hội.</div>
-  </div>
-
-  <div class="marx-quote" style="text-align:left;margin-top:18px">
+  </div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<<next 1.4s t8n>>\
+  <div class="sys-msg error" style="text-align:left">
+    [ROOT CAUSE]: AI được xây dựng trên 100% quy tắc logic hình thức — một hệ thống lý luận đóng kín, cô lập với thực tiễn đời sống xã hội.
+  </div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<<next 1.6s t8n>>\
+  <div class="marx-quote" style="text-align:left">
     <div style="font-family:var(--font-mono);font-size:0.7rem;color:var(--accent-yellow);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px">✦ Lý thuyết liên hệ — Tính tương đối & Tuyệt đối của Chân lý</div>
     <blockquote style="font-size:0.95rem">"Tính tương đối của chân lý thể hiện ở chỗ những tri thức đúng nhưng chưa hoàn toàn đầy đủ — nó mới phản ánh đúng một mặt, một bộ phận nào đó của hiện thực khách quan trong những điều kiện giới hạn xác định."</blockquote>
     <div class="attribution">— Triết học Mác - Lênin (Bộ GD&ĐT) —</div>
-    <div style="font-size:0.85rem;color:var(--text-secondary);margin-top:10px;font-family:var(--font-body);line-height:1.75">⟶ <em>Thuật toán CENSOR-X <strong>không sai hoàn toàn</strong> — nó có thể đúng trong điều kiện phòng thí nghiệm hạn chế. Đó là <strong>chân lý tương đối</strong>. Nhưng khi đối mặt với 10 triệu người dùng thực tế đa dạng, nó đã chứng minh giới hạn của mình. Con người cần không ngừng tiệm cận chân lý tuyệt đối thông qua thực tiễn.</em></div>
-  </div>
-
-
-  <<timed 2s t8n>>\
-<div class="marx-quote">
+    <div style="font-size:0.85rem;color:var(--text-secondary);margin-top:10px;font-family:var(--font-body);line-height:1.75">⟶ <em>Thuật toán CENSOR-X <strong>không sai hoàn toàn</strong> — nó có thể đúng trong điều kiện phòng thí nghiệm hạn chế. Đó là <strong>chân lý tương đối</strong>. Nhưng khi đối mặt với 10 triệu người dùng thực tế đa dạng, nó đã chứng minh giới hạn của mình.</em></div>
+  </div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<<next 2s t8n>>\
+  <div class="marx-quote">
     <blockquote>"The question whether objective truth can be attributed to human thinking is not a question of theory but is a practical question."</blockquote>
     <blockquote style="font-size:0.95rem;color:var(--accent-yellow);opacity:0.85">"Vấn đề tìm hiểu xem tư duy của con người có thể đạt tới chân lý khách quan không, hoàn toàn không phải là một vấn đề lý luận mà là một vấn đề thực tiễn."</blockquote>
     <div class="attribution">— Karl Marx —</div>
   </div>\
-<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },150)>>\
-<<next 3s t8n>>\
-<div class="panel" style="text-align:left">
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<<next 2s t8n>>\
+  <div class="panel" style="text-align:left">
     <div class="panel-header" style="color:var(--accent-green)">Giải pháp khẩn cấp</div>
     <div class="sys-msg ok">[PROPOSAL]: Cài đặt bản vá Thực tiễn — Cơ chế RLHF (Reinforcement Learning from Human Feedback). Cho phép con người nạp dữ liệu ngữ cảnh đời sống thực tế vào hệ thống để sửa lỗi thuật toán.</div>
-  </div>
+  </div>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
+<<next 1.4s t8n>>\
   <div style="text-align:center;margin-top:16px">
     <<link '<span class="btn btn-primary btn-glow">▸ CÀI ĐẶT BẢN VÁ THỰC TIỄN — CHỌN CƠ CHẾ RLHF</span>'>>
       <<set $gamePhase to "act3">>
       <<goto "Act3_Intro">>
     <</link>>
   </div>\
-<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },150)>>\
+<<run setTimeout(function(){ window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); },100)>>\
 <</timed>>
 </div>

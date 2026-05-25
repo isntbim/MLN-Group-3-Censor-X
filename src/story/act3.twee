@@ -4,6 +4,8 @@
   <div class="subtitle">Bản vá RLHF đã được kích hoạt. Giao diện chuyển sang chế độ Gỡ lỗi (Debug Console). Nhiệm vụ: Nạp ngữ cảnh thực tế cho mỗi câu bình luận bị phân loại sai để dạy lại AI.</div>
 </div>
 
+<div class="game-img-container"><img class="game-img" src="assets/rlhf_patch.png" alt="RLHF Patching Mechanism"></div>
+
 <div class="panel">
   <div class="panel-header" style="color:var(--accent-green)">Hướng dẫn cơ chế RLHF</div>
   <div class="sys-msg ok">Mỗi câu bình luận sẽ hiện lại kèm phân tích lỗi của CENSOR-X. Bạn cần chọn đúng <strong>ngữ cảnh thực tiễn</strong> từ 3 phương án để sửa lỗi thuật toán.</div>
@@ -23,12 +25,16 @@
 <div class="debug-console">
   <div class="debug-header">context_injector.exe — RLHF Patch v1.0</div>
 
+  <div class="review-layout">
+  <div class="review-left">
   <div class="comment-card" style="border-left-color:var(--accent-red)">
     <div class="comment-user" style="color:var(--accent-red)">BÌNH LUẬN BỊ PHÂN LOẠI SAI</div>
     <<= _c.text>>
   </div>
+  </div>
 
-  <div class="ai-analysis" style="margin-top:14px">
+  <div class="review-right">
+  <div class="ai-analysis" style="margin-top:0">
     <div class="ai-analysis-header">Lỗi logic của CENSOR-X</div>
     <div class="ai-analysis-text"><<= _c.ai_wrong_logic>></div>
   </div>
@@ -57,6 +63,8 @@
     <</link>>\
     <</capture>>\
 <</for>>\
+  </div>
+  </div>
   </div>
 </div>
 

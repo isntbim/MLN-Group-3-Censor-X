@@ -27,6 +27,8 @@
 <<set _c to $shuffledAct1[$turn]>>\
 <<= setup.renderTurnDots($turn, 5)>>
 
+<div class="review-layout">
+<div class="review-left">
 <div class="panel">
   <div class="panel-header">Bình luận người dùng</div>
   <div class="ig-post">
@@ -45,7 +47,9 @@
     </div>
   </div>
 </div>
+</div>
 
+<div class="review-right">
 <div class="ai-analysis">
   <div class="ai-analysis-header">Phân tích của CENSOR-X</div>
   <div class="ai-analysis-text"><<= _c.ai_logic>></div>
