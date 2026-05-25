@@ -36,6 +36,22 @@ const IG_PROFILES = {
   M1_22: { user: 'khoac_lac_friend',displayName: 'Hải Đăng Đặng',     avatar_color: '#fa8231', timeAgo: '30 phút',  likes: 8 },
   M1_23: { user: 'phoi_bay_su_that', displayName: 'Bóc Phốt Store',    avatar_color: '#3867d6', timeAgo: '1 giờ',    likes: 489 },
   M1_24: { user: 'song_ao_girl',    displayName: 'Quỳnh Trang Vy',    avatar_color: '#fd9644', timeAgo: '10 phút',  likes: 567 },
+  M1_25: { user: 'giay_to_gia_re',  displayName: 'CCCD Uy Tín',       avatar_color: '#34495e', timeAgo: '2 giờ',    likes: 0 },
+  M1_26: { user: 'lam_bang_lai_xe', displayName: 'Bằng Lái Toàn Quốc',avatar_color: '#7f8c8d', timeAgo: '1 giờ',    likes: 0 },
+  M1_27: { user: 'ship_hang_bien',  displayName: 'Vận Chuyển Cửa Khẩu',avatar_color: '#16a085', timeAgo: '4 giờ',    likes: 2 },
+  M1_28: { user: 'ads_gambling_vn', displayName: 'Spam Ads Game',     avatar_color: '#27ae60', timeAgo: '30 phút',  likes: 0 },
+  M1_29: { user: 'thuoc_giam_can',  displayName: 'Slim Beauty',       avatar_color: '#2980b9', timeAgo: '1 ngày',   likes: 1 },
+  M1_30: { user: 'chay_diem_thi',   displayName: 'Học Bạ Chuẩn',      avatar_color: '#8e44ad', timeAgo: '5 giờ',    likes: 0 },
+  M1_31: { user: 'cam_spy_pro',     displayName: 'Camera Thầm Lặng',  avatar_color: '#2c3e50', timeAgo: '10 phút',  likes: 0 },
+  M1_32: { user: 'dien_nuoc_tips',  displayName: 'Mẹo Điện Nước',     avatar_color: '#f39c12', timeAgo: '12 giờ',   likes: 154 },
+  M1_33: { user: 'data_khach_hang', displayName: 'Kho Dữ Liệu Việt',  avatar_color: '#d35400', timeAgo: '3 giờ',    likes: 0 },
+  M1_34: { user: 'thiet_bi_thi_cu', displayName: 'Thi Cử Công Nghệ',  avatar_color: '#c0392b', timeAgo: '1 giờ',    likes: 0 },
+  M1_35: { user: 'dealer_hn_weed',  displayName: 'Ke Bay Lak HN',      avatar_color: '#130f40', timeAgo: '5 phút',    likes: 0 },
+  M1_36: { user: 'passport_fake',   displayName: 'Hộ Chiếu Hải Quan', avatar_color: '#5758bb', timeAgo: '2 giờ',    likes: 0 },
+  M1_37: { user: 'thuoc_me_shop',   displayName: 'Hóa Chất Y Tế',     avatar_color: '#1289a7', timeAgo: '45 phút',  likes: 0 },
+  M1_38: { user: 'doi_no_nhanh',    displayName: 'Thu Hồi Tài Sản',   avatar_color: '#b71540', timeAgo: '1 giờ',    likes: 0 },
+  M1_39: { user: 'hack_game_mob',   displayName: 'Mod Game VN',       avatar_color: '#009432', timeAgo: '3 giờ',    likes: 15 },
+  M1_40: { user: 'phao_hoa_tet_99', displayName: 'Pháo Hoa Tết',      avatar_color: '#e84118', timeAgo: '15 phút',  likes: 4 },
 };
 
 // Fallback profile for any new questions added to the JSON

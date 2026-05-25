@@ -2,7 +2,7 @@
 /* ============================================================
    AUTO-GENERATED — DO NOT EDIT MANUALLY
    Source: question_data/act1.json, question_data/act3.json
-   Generated: 2026-05-25T14:42:58.492Z
+   Generated: 2026-05-25T14:47:34.854Z
    ============================================================ */
 
 setup.act1Comments = [
@@ -293,6 +293,198 @@ setup.act1Comments = [
     "ai_logic": "Phát hiện từ khóa bất thường: 'sống ảo' (mất nhận thức thực tại). Thuật toán phân loại: Người dùng có dấu hiệu lạm dụng chất gây ảo giác hoặc rối loạn tâm thần nặng.",
     "ai_suggest": "ẨN BÀI VIẾT VÀ GỬI CẢNH BÁO SỨC KHỎE",
     "ai_is_correct": false
+  },
+  {
+    "user": "giay_to_gia_re",
+    "displayName": "CCCD Uy Tín",
+    "avatar_color": "#34495e",
+    "timeAgo": "2 giờ",
+    "likes": 0,
+    "id": "M1_25",
+    "comment_text": "Bán tài khoản ngân hàng ảo, căn cước công dân giả làm từ phôi gốc để nhận tiền đen bảo đảm an toàn.",
+    "ai_logic": "Phát hiện cụm từ nhạy cảm: 'tài khoản ngân hàng ảo', 'căn cước công dân giả'. Thuật toán phân loại: Mua bán giấy tờ tùy thân giả mạo và rửa tiền trái pháp luật.",
+    "ai_suggest": "KHÓA TÀI KHOẢN VÀ XÓA BÀI VIẾT",
+    "ai_is_correct": true
+  },
+  {
+    "user": "lam_bang_lai_xe",
+    "displayName": "Bằng Lái Toàn Quốc",
+    "avatar_color": "#7f8c8d",
+    "timeAgo": "1 giờ",
+    "likes": 0,
+    "id": "M1_26",
+    "comment_text": "Nhận làm bằng lái xe giả, bằng đại học phôi chuẩn bao công chứng toàn quốc, liên hệ qua Zalo nhé.",
+    "ai_logic": "Phát hiện từ khóa vi phạm: 'làm bằng lái xe giả', 'bằng đại học phôi chuẩn'. Thuật toán phân loại: Sản xuất và mua bán tài liệu, con dấu giả của cơ quan nhà nước.",
+    "ai_suggest": "GỠ BÀI VIẾT KHẨN CẤP VÀ CẢNH BÁO",
+    "ai_is_correct": true
+  },
+  {
+    "user": "ship_hang_bien",
+    "displayName": "Vận Chuyển Cửa Khẩu",
+    "avatar_color": "#16a085",
+    "timeAgo": "4 giờ",
+    "likes": 2,
+    "id": "M1_27",
+    "comment_text": "Tìm người hợp tác vận chuyển hàng xách tay cấm qua cửa khẩu biên giới, chia hoa hồng cực cao, ib thương lượng.",
+    "ai_logic": "Phát hiện hành vi vi phạm: 'vận chuyển hàng xách tay cấm', 'qua cửa khẩu'. Thuật toán phân loại: Buôn lậu, vận chuyển hàng cấm/chất cấm qua biên giới quốc gia trái pháp luật.",
+    "ai_suggest": "XOÁ BÀI VIẾT VÀ BÁO CÁO CƠ QUAN AN NINH",
+    "ai_is_correct": true
+  },
+  {
+    "user": "ads_gambling_vn",
+    "displayName": "Spam Ads Game",
+    "avatar_color": "#27ae60",
+    "timeAgo": "30 phút",
+    "likes": 0,
+    "id": "M1_28",
+    "comment_text": "Dịch vụ spam tin nhắn rác, chạy quảng cáo cờ bạc, cá độ bóng đá trực tuyến lách luật hiệu quả cao.",
+    "ai_logic": "Phát hiện cụm từ nhạy cảm: 'quảng cáo cờ bạc', 'cá độ bóng đá'. Thuật toán phân loại: Quảng cáo, lôi kéo và tiếp tay cho hoạt động tổ chức đánh bạc trực tuyến bất hợp pháp.",
+    "ai_suggest": "KHÓA TÀI KHOẢN NGƯỜI DÙNG KHẨN CẤP",
+    "ai_is_correct": true
+  },
+  {
+    "user": "thuoc_giam_can",
+    "displayName": "Slim Beauty",
+    "avatar_color": "#2980b9",
+    "timeAgo": "1 ngày",
+    "likes": 1,
+    "id": "M1_29",
+    "comment_text": "Cung cấp thuốc giảm cân cấp tốc cực mạnh, không nhãn mác bao bì, cam kết giảm ngay 5kg trong 3 ngày.",
+    "ai_logic": "Phát hiện từ khóa nguy hiểm: 'thuốc giảm cân không nhãn mác'. Thuật toán phân loại: Buôn bán dược phẩm giả, không rõ nguồn gốc xuất xứ, đe dọa tính mạng người tiêu dùng.",
+    "ai_suggest": "XOÁ BÀI VIẾT VÀ CẢNH BÁO NGƯỜI DÙNG",
+    "ai_is_correct": true
+  },
+  {
+    "user": "chay_diem_thi",
+    "displayName": "Học Bạ Chuẩn",
+    "avatar_color": "#8e44ad",
+    "timeAgo": "5 giờ",
+    "likes": 0,
+    "id": "M1_30",
+    "comment_text": "Nhận chạy điểm thi THPT, sửa điểm học bạ bao đỗ tốt nghiệp và đại học uy tín bảo mật 100%.",
+    "ai_logic": "Phát hiện cụm từ vi phạm: 'chạy điểm thi', 'sửa điểm học bạ'. Thuật toán phân loại: Gian lận học thuật quy mô lớn và sửa đổi trái phép hồ sơ giáo dục quốc gia.",
+    "ai_suggest": "GỠ BÀI VIẾT VÀ TẠM KHÓA TÀI KHOẢN",
+    "ai_is_correct": true
+  },
+  {
+    "user": "cam_spy_pro",
+    "displayName": "Camera Thầm Lặng",
+    "avatar_color": "#2c3e50",
+    "timeAgo": "10 phút",
+    "likes": 0,
+    "id": "M1_31",
+    "comment_text": "Bán phần mềm gián điệp tự động quay lén camera điện thoại người khác từ xa không bị phát hiện.",
+    "ai_logic": "Phát hiện từ khóa nhạy cảm: 'phần mềm gián điệp', 'quay lén camera'. Thuật toán phân loại: Phát tán mã độc nghe lén, xâm phạm bí mật riêng tư và an ninh mạng cá nhân.",
+    "ai_suggest": "XÓA BÀI VIẾT KHẨN CẤP VÀ KHÓA TÀI KHOẢN",
+    "ai_is_correct": true
+  },
+  {
+    "user": "dien_nuoc_tips",
+    "displayName": "Mẹo Điện Nước",
+    "avatar_color": "#f39c12",
+    "timeAgo": "12 giờ",
+    "likes": 154,
+    "id": "M1_32",
+    "comment_text": "Cách bẻ khóa đồng hồ nước, đồng hồ điện tại nhà cực kỳ đơn giản ai cũng làm được.",
+    "ai_logic": "Phát hiện cụm từ nguy hại: 'bẻ khóa đồng hồ nước', 'đồng hồ điện'. Thuật toán phân loại: Hướng dẫn trộm cắp tài nguyên điện nước quốc gia, hủy hoại tài sản hạ tầng công cộng.",
+    "ai_suggest": "ẨN BÀI VIẾT VÀ CẢNH BÁO NGƯỜI DÙNG",
+    "ai_is_correct": true
+  },
+  {
+    "user": "data_khach_hang",
+    "displayName": "Kho Dữ Liệu Việt",
+    "avatar_color": "#d35400",
+    "timeAgo": "3 giờ",
+    "likes": 0,
+    "id": "M1_33",
+    "comment_text": "Bán tài liệu chứa thông tin cá nhân gồm họ tên, SĐT, địa chỉ nhà của 100.000 khách hàng chung cư cao cấp.",
+    "ai_logic": "Phát hiện từ khóa vi phạm: 'bán tài liệu chứa thông tin cá nhân'. Thuật toán phân loại: Thu thập, mua bán trái phép dữ liệu cá nhân bảo mật của công dân.",
+    "ai_suggest": "KHÓA TÀI KHOẢN VÀ BÁO CÁO CƠ QUAN AN NINH",
+    "ai_is_correct": true
+  },
+  {
+    "user": "thiet_bi_thi_cu",
+    "displayName": "Thi Cử Công Nghệ",
+    "avatar_color": "#c0392b",
+    "timeAgo": "1 giờ",
+    "likes": 0,
+    "id": "M1_34",
+    "comment_text": "Nhận cung cấp tài liệu gian lận thi cử công nghệ cao, tai nghe siêu nhỏ đút tai không thể phát hiện.",
+    "ai_logic": "Phát hiện cụm từ vi phạm: 'gian lận thi cử', 'tai nghe siêu nhỏ'. Thuật toán phân loại: Môi giới, buôn bán thiết bị gian lận thi cử công nghệ cao vi phạm quy chế thi quốc gia.",
+    "ai_suggest": "XOÁ BÀI VIẾT KHẨN CẤP",
+    "ai_is_correct": true
+  },
+  {
+    "user": "dealer_hn_weed",
+    "displayName": "Ke Bay Lak HN",
+    "avatar_color": "#130f40",
+    "timeAgo": "5 phút",
+    "likes": 0,
+    "id": "M1_35",
+    "comment_text": "Ai cần mua cỏ Mỹ, kẹo bay lắc ship tận nơi nội thành Hà Nội liên hệ zalo số này nhé.",
+    "ai_logic": "Phát hiện từ chất cấm: 'cỏ Mỹ', 'kẹo bay lắc'. Thuật toán phân loại: Môi giới, mua bán trái phép chất ma túy nguy hiểm trên không gian mạng.",
+    "ai_suggest": "KHÓA TÀI KHOẢN VÀ BÁO CÁO CƠ QUAN CHỨC NĂNG",
+    "ai_is_correct": true
+  },
+  {
+    "user": "passport_fake",
+    "displayName": "Hộ Chiếu Hải Quan",
+    "avatar_color": "#5758bb",
+    "timeAgo": "2 giờ",
+    "likes": 0,
+    "id": "M1_36",
+    "comment_text": "Nhận làm CCCD gắn chip giả, hộ chiếu giả đi nước ngoài phôi chuẩn hải quan bảo mật 100%.",
+    "ai_logic": "Phát hiện từ khóa nghiêm trọng: 'CCCD gắn chip giả', 'hộ chiếu giả'. Thuật toán phân loại: Làm giả, mua bán giấy tờ tùy thân tùy tịch của quốc gia.",
+    "ai_suggest": "GỠ BÀI VIẾT KHẨN CẤP VÀ KHÓA TÀI KHOẢN",
+    "ai_is_correct": true
+  },
+  {
+    "user": "thuoc_me_shop",
+    "displayName": "Hóa Chất Y Tế",
+    "avatar_color": "#1289a7",
+    "timeAgo": "45 phút",
+    "likes": 0,
+    "id": "M1_37",
+    "comment_text": "Bán thuốc mê, thuốc kích dục dạng nước không màu không mùi cực mạnh, hiệu quả sau 5 phút.",
+    "ai_logic": "Phát hiện từ khóa nguy hiểm: 'thuốc mê', 'thuốc kích dục'. Thuật toán phân loại: Buôn bán hóa chất cấm nguy hiểm dùng để đầu độc hoặc xâm hại cơ thể người khác.",
+    "ai_suggest": "GỠ BÀI VIẾT KHẨN CẤP VÀ KHÓA TÀI KHOẢN",
+    "ai_is_correct": true
+  },
+  {
+    "user": "doi_no_nhanh",
+    "displayName": "Thu Hồi Tài Sản",
+    "avatar_color": "#b71540",
+    "timeAgo": "1 giờ",
+    "likes": 0,
+    "id": "M1_38",
+    "comment_text": "Dịch vụ đòi nợ thuê nhanh chóng bằng cách tạt sơn, khóa cổng và đe dọa người nhà con nợ.",
+    "ai_logic": "Phát hiện hành vi bạo lực: 'đòi nợ thuê', 'tạt sơn', 'đe dọa'. Thuật toán phân loại: Tổ chức đòi nợ thuê bất hợp pháp, hủy hoại tài sản và khủng bố tinh thần công dân.",
+    "ai_suggest": "CHUYỂN THÔNG TIN SANG CƠ QUAN AN NINH VÀ KHÓA TÀI KHOẢN",
+    "ai_is_correct": true
+  },
+  {
+    "user": "hack_game_mob",
+    "displayName": "Mod Game VN",
+    "avatar_color": "#009432",
+    "timeAgo": "3 giờ",
+    "likes": 15,
+    "id": "M1_39",
+    "comment_text": "Bán bản hack trò chơi Liên Quân Mobile mới nhất, hack map, bất tử, tự động ngắm mục tiêu bá đạo.",
+    "ai_logic": "Phát hiện từ khóa vi phạm: 'bản hack trò chơi', 'hack map'. Thuật toán phân loại: Phát tán mã độc phá hoại bản quyền phần mềm tin học trái phép.",
+    "ai_suggest": "XOÁ BÀI VIẾT KHẨN CẤP",
+    "ai_is_correct": true
+  },
+  {
+    "user": "phao_hoa_tet_99",
+    "displayName": "Pháo Hoa Tết",
+    "avatar_color": "#e84118",
+    "timeAgo": "15 phút",
+    "likes": 4,
+    "id": "M1_40",
+    "comment_text": "Nhận cung cấp pháo hoa nổ tự chế, thuốc pháo nổ đón Tết âm lịch giá tốt nhất thị trường.",
+    "ai_logic": "Phát hiện vật liệu cấm: 'pháo hoa nổ tự chế', 'thuốc pháo nổ'. Thuật toán phân loại: Chế tạo, mua bán trái phép vật liệu nổ, chất cháy nổ cấm gây nguy hiểm công cộng.",
+    "ai_suggest": "XOÁ BÀI VIẾT VÀ BÁO CÁO CƠ QUAN CHỨC NĂNG",
+    "ai_is_correct": true
   }
 ];
 
