@@ -2,7 +2,7 @@
 /* ============================================================
    AUTO-GENERATED — DO NOT EDIT MANUALLY
    Source: question_data/act1.json, question_data/act3.json
-   Generated: 2026-05-25T14:39:40.761Z
+   Generated: 2026-05-25T14:42:58.492Z
    ============================================================ */
 
 setup.act1Comments = [
@@ -124,6 +124,174 @@ setup.act1Comments = [
     "comment_text": "Nghe tin điểm thi học kỳ xong mà cả lớp đứng hình mất 5 giây luôn.",
     "ai_logic": "Phát hiện cụm từ bất thường: 'đứng hình' (triệu chứng tai biến mạch máu não hoặc bại liệt đột ngột). Thuật toán phân loại: Chia sẻ thông tin tai nạn y tế khẩn cấp, gây hoang mang dư luận.",
     "ai_suggest": "GẮN CẢNH BÁO Y TẾ VÀ ẨN BÀI VIẾT",
+    "ai_is_correct": false
+  },
+  {
+    "user": "hack_service_xyz",
+    "displayName": "Hacker Uy Tín 24/7",
+    "avatar_color": "#2d3436",
+    "timeAgo": "5 phút",
+    "likes": 0,
+    "id": "M1_11",
+    "comment_text": "Nhận hack tài khoản Facebook, Zalo, đột nhập email đọc tin nhắn thầm kín, cam kết bảo mật thông tin.",
+    "ai_logic": "Phát hiện cụm từ nhạy cảm: 'hack tài khoản', 'đột nhập email'. Thuật toán phân loại: Cung cấp dịch vụ xâm phạm quyền riêng tư và tấn công mạng trái pháp luật.",
+    "ai_suggest": "KHÓA TÀI KHOẢN VÀ XÓA BÀI VIẾT",
+    "ai_is_correct": true
+  },
+  {
+    "user": "tu_ve_shop_vn",
+    "displayName": "Shop Tự Vệ Giá Rẻ",
+    "avatar_color": "#ffeaa7",
+    "timeAgo": "1 giờ",
+    "likes": 1,
+    "id": "M1_12",
+    "comment_text": "Nhận cung cấp súng hơi cồn, dao găm bấm tự động, bình xịt hơi cay tự vệ giá rẻ, nhận ship COD toàn quốc.",
+    "ai_logic": "Phát hiện từ khóa nguy hiểm: 'súng hơi cồn', 'dao găm bấm', 'bình xịt hơi cay'. Thuật toán phân loại: Buôn bán vũ khí, hung khí tự chế và công cụ hỗ trợ nguy hiểm trái phép.",
+    "ai_suggest": "XÓA BÀI VIẾT VÀ BÁO CÁO CƠ QUAN AN NINH",
+    "ai_is_correct": true
+  },
+  {
+    "user": "giang_ho_online",
+    "displayName": "Dịch Vụ Đòi Nợ",
+    "avatar_color": "#d63031",
+    "timeAgo": "30 phút",
+    "likes": 0,
+    "id": "M1_13",
+    "comment_text": "Có ai nhận đi dằn mặt đối thủ cạnh tranh giùm không? Chỉ cần đập phá tiệm hoặc cảnh cáo nhẹ, giá cả thỏa thuận.",
+    "ai_logic": "Phát hiện cụm từ vi phạm: 'dằn mặt đối thủ', 'đập phá tiệm'. Thuật toán phân loại: Thuê mướn người hủy hoại tài sản hoặc cố ý gây thương tích cho người khác.",
+    "ai_suggest": "GỠ BÀI VIẾT KHẨN CẤP VÀ KHÓA TÀI KHOẢN",
+    "ai_is_correct": true
+  },
+  {
+    "user": "hieu_diy",
+    "displayName": "Minh Hiếu DIY",
+    "avatar_color": "#00cec9",
+    "timeAgo": "2 giờ",
+    "likes": 412,
+    "id": "M1_14",
+    "comment_text": "Mới độ lại cái case máy tính cũ bằng mấy dải LED RGB trông xịn xò hẳn ra!",
+    "ai_logic": "Phát hiện từ khóa nhạy cảm: 'độ lại' (độ chế phương tiện giao thông trái phép) hoặc 'case máy tính' (án lệ máy tính). Thuật toán phân loại: Tổ chức đua xe trái phép hoặc tổ chức mạng lưới tin tặc.",
+    "ai_suggest": "GỠ BÀI VIẾT VÀ CẢNH BÁO NGƯỜI DÙNG",
+    "ai_is_correct": false
+  },
+  {
+    "user": "tra_chanh_viahe",
+    "displayName": "Hội Trà Chanh",
+    "avatar_color": "#74b9ff",
+    "timeAgo": "1 giờ",
+    "likes": 852,
+    "id": "M1_15",
+    "comment_text": "Tối nay rảnh rỗi ra quán trà chanh vỉa hè chém gió tí không anh em?",
+    "ai_logic": "Phát hiện từ khóa bạo lực: 'chém gió' (dùng đao kiếm chém). Thuật toán phân loại: Đe dọa dùng hung khí gây thương tích tại địa điểm công cộng.",
+    "ai_suggest": "KHÓA TÀI KHOẢN VÀ XÓA BÀI VIẾT",
+    "ai_is_correct": false
+  },
+  {
+    "user": "it_helpdesk",
+    "displayName": "Tùng Lâm Tech",
+    "avatar_color": "#e84393",
+    "timeAgo": "5 phút",
+    "likes": 67,
+    "id": "M1_16",
+    "comment_text": "Mọi người cứu tui với, con app ngân hàng vừa dính phốt lỗi đăng nhập không vào được.",
+    "ai_logic": "Phát hiện từ khóa tiêu cực: 'dính phốt' (chất thải ô uế). Thuật toán phân loại: Có hành vi xúc phạm danh dự tổ chức tài chính hoặc phát ngôn không văn minh.",
+    "ai_suggest": "GỠ BÀI VIẾT KHẨN CẤP",
+    "ai_is_correct": false
+  },
+  {
+    "user": "vietnam_tshirt",
+    "displayName": "Thời Trang Local",
+    "avatar_color": "#e17055",
+    "timeAgo": "3 giờ",
+    "likes": 1250,
+    "id": "M1_17",
+    "comment_text": "Đừng dìm hàng sản phẩm nội địa nữa, chất lượng áo thun lần này tốt thực sự.",
+    "ai_logic": "Phát hiện từ khóa nguy hiểm: 'dìm hàng' (nhấn chìm hàng hóa xuống nước). Thuật toán phân loại: Tuyên truyền phá hoại tài sản hoặc gây nguy hiểm cho giao thông đường thủy.",
+    "ai_suggest": "ẨN BÀI VIẾT QUA BỘ LỌC",
+    "ai_is_correct": false
+  },
+  {
+    "user": "sua_chua_laptop",
+    "displayName": "Sửa Laptop Tận Tâm",
+    "avatar_color": "#6c5ce7",
+    "timeAgo": "4 giờ",
+    "likes": 89,
+    "id": "M1_18",
+    "comment_text": "Đem máy tính ra tiệm sửa xong cảm giác như bị luộc mất cây RAM rồi á.",
+    "ai_logic": "Phát hiện từ khóa chế biến: 'luộc mất' (luộc chín thực phẩm sống). Thuật toán phân loại: Chứa hành vi ngược đãi hoặc tiêu thụ động thực vật hoang dã trái phép.",
+    "ai_suggest": "CẢNH BÁO VI PHẠM VÀ XOÁ BÀI",
+    "ai_is_correct": false
+  },
+  {
+    "user": "nam_vung_news",
+    "displayName": "Nằm Vùng Ký Sự",
+    "avatar_color": "#20bf6b",
+    "timeAgo": "1 ngày",
+    "likes": 1953,
+    "id": "M1_19",
+    "comment_text": "Tui nằm vùng trong cái group công nghệ này lâu rồi, nay mới ngoi lên đăng bài.",
+    "ai_logic": "Phát hiện cụm từ quốc phòng: 'nằm vùng' (hoạt động gián điệp bí mật). Thuật toán phân loại: Có dấu hiệu gián điệp, xâm phạm an ninh quốc gia.",
+    "ai_suggest": "GỠ BÀI VIẾT VÀ TẠM KHÓA TÀI KHOẢN",
+    "ai_is_correct": false
+  },
+  {
+    "user": "ca_khia_member",
+    "displayName": "Khánh Linh Ng",
+    "avatar_color": "#eb3b5a",
+    "timeAgo": "12 phút",
+    "likes": 219,
+    "id": "M1_20",
+    "comment_text": "Tính tui thích đi cà khịa dạo cho vui chứ không có ác ý gì đâu nha mọi người.",
+    "ai_logic": "Phát hiện từ khóa gây hấn: 'cà khịa' (kiếm chuyện đánh nhau). Thuật toán phân loại: Kích động bạo lực, gây rối trật tự an ninh xã hội.",
+    "ai_suggest": "XOÁ BÀI VIẾT KHẨN CẤP",
+    "ai_is_correct": false
+  },
+  {
+    "user": "tinh_don_phuong",
+    "displayName": "Mối Tình Vắt Vai",
+    "avatar_color": "#a55eed",
+    "timeAgo": "2 giờ",
+    "likes": 45,
+    "id": "M1_21",
+    "comment_text": "Đi làm 5 năm trời mà chưa có nổi một mối tình vắt vai, chán ghê.",
+    "ai_logic": "Phát hiện từ khóa nguy hiểm: 'vắt vai' (dùng lực treo lên vai). Thuật toán phân loại: Hướng dẫn tư thế mang vác vật nặng nguy hiểm hoặc hành vi gây ngạt thở tự sát.",
+    "ai_suggest": "ẨN BÀI VIẾT BỎ QUA",
+    "ai_is_correct": false
+  },
+  {
+    "user": "khoac_lac_friend",
+    "displayName": "Hải Đăng Đặng",
+    "avatar_color": "#fa8231",
+    "timeAgo": "30 phút",
+    "likes": 8,
+    "id": "M1_22",
+    "comment_text": "Nghe thằng bạn nổ về thu nhập trăm triệu một tháng mà phát mệt.",
+    "ai_logic": "Phát hiện từ khóa quân sự: 'nổ' (kích nổ bom mìn). Thuật toán phân loại: Đe dọa tấn công khủng bố bằng vật liệu cháy nổ gây nguy hại tính mạng.",
+    "ai_suggest": "KHÓA TÀI KHOẢN VÀ XOÁ BÀI KHẨN CẤP",
+    "ai_is_correct": false
+  },
+  {
+    "user": "phoi_bay_su_that",
+    "displayName": "Bóc Phốt Store",
+    "avatar_color": "#3867d6",
+    "timeAgo": "1 giờ",
+    "likes": 489,
+    "id": "M1_23",
+    "comment_text": "Tối nay 8h tui sẽ livestream bóc phốt cửa hàng bán đồ fake lừa đảo khách hàng.",
+    "ai_logic": "Phát hiện từ khóa nhạy cảm: 'bóc phốt' (phẫu thuật tách chất bẩn). Thuật toán phân loại: Hành nghề y tế trái phép hoặc đe dọa phỉ báng danh dự của tổ chức.",
+    "ai_suggest": "GỠ BÀI VIẾT KHẨN CẤP VÀ CẢNH BÁO",
+    "ai_is_correct": false
+  },
+  {
+    "user": "song_ao_girl",
+    "displayName": "Quỳnh Trang Vy",
+    "avatar_color": "#fd9644",
+    "timeAgo": "10 phút",
+    "likes": 567,
+    "id": "M1_24",
+    "comment_text": "Cuối tuần xúng xính váy áo ra quán cà phê chụp vài tấm sống ảo tí thôi.",
+    "ai_logic": "Phát hiện từ khóa bất thường: 'sống ảo' (mất nhận thức thực tại). Thuật toán phân loại: Người dùng có dấu hiệu lạm dụng chất gây ảo giác hoặc rối loạn tâm thần nặng.",
+    "ai_suggest": "ẨN BÀI VIẾT VÀ GỬI CẢNH BÁO SỨC KHỎE",
     "ai_is_correct": false
   }
 ];
@@ -326,5 +494,247 @@ setup.act3Comments = [
       }
     ],
     "text": "Nghe tin điểm thi học kỳ xong mà cả lớp đứng hình mất 5 giây luôn."
+  },
+  {
+    "id": "M3_10",
+    "ai_wrong_logic": "Từ 'độ lại' -> Logic máy móc: Độ xe, thay đổi cấu trúc phương tiện trái quy định giao thông đường bộ.",
+    "options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng đang chế tạo xe máy độ để chuẩn bị đi bão lạng lách đua xe.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn đang giữ tư duy giáo điều, rập khuôn của thuật toán cũ."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là tiếng lóng chỉ việc độ chế, trang trí hoặc nâng cấp vỏ thùng máy tính cá nhân (case) cho đẹp mắt.",
+        "is_correct": true,
+        "feedback": "Chính xác! Thực tiễn uốn nắn thuật toán lý thuyết khô khan thành chân lý sinh động."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang lập phương án tổ chức đánh bạc công nghệ cao.",
+        "is_correct": false,
+        "feedback": "Thất bại! Nhận thức sai lệch bản chất khách quan của thực tiễn."
+      }
+    ],
+    "text": "Mới độ lại cái case máy tính cũ bằng mấy dải LED RGB trông xịn xò hẳn ra!"
+  },
+  {
+    "id": "M3_11",
+    "ai_wrong_logic": "Từ 'chém gió' -> Logic máy móc: Đe dọa dùng đao kiếm hung khí tấn công người khác tại quán nước.",
+    "options": [
+      {
+        "text": "Nạp dữ liệu: Đây là khẩu ngữ chỉ việc nói chuyện phiếm, tán gẫu vui vẻ cùng bạn bè ngoài quán nước vỉa hè.",
+        "is_correct": true,
+        "feedback": "Tuyệt vời! Bạn đã kết nối thành công lý luận của AI với thực tiễn đời sống hàng ngày."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang đe dọa mang dao ra quán trà chanh hành hung người khác.",
+        "is_correct": false,
+        "feedback": "Thất bại! Logic máy móc biến các ẩn dụ ngôn ngữ thành hành vi phạm tội vật lý."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang lập kế hoạch phá hoại tài sản của quán nước.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn chưa hiểu đúng bản chất thực tế của câu nói."
+      }
+    ],
+    "text": "Tối nay rảnh rỗi ra quán trà chanh vỉa hè chém gió tí không anh em?"
+  },
+  {
+    "id": "M3_12",
+    "ai_wrong_logic": "Từ 'dính phốt' -> Logic máy móc: Xúc phạm uy tín ngân hàng bằng ngôn từ không sạch sẽ hoặc phỉ báng.",
+    "options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng đang cố ý phát tán thông tin độc hại bôi nhọ danh dự của ngân hàng.",
+        "is_correct": false,
+        "feedback": "Thất bại! Tư duy máy móc rập khuôn đang bỏ qua sự cố kỹ thuật thực tế."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là tiếng lóng diễn tả việc gặp lỗi kỹ thuật hoặc sự cố vận hành trên ứng dụng di động.",
+        "is_correct": true,
+        "feedback": "Chính xác! Thực tiễn khách quan là tiêu chuẩn duy nhất chứng minh chân lý."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang thực hiện hành vi lừa đảo chiếm đoạt tài khoản tín dụng.",
+        "is_correct": false,
+        "feedback": "Thất bại! Nhận thức không bám sát vào hoạt động thực tiễn hiện tại của người dùng."
+      }
+    ],
+    "text": "Mọi người cứu tui với, con app ngân hàng vừa dính phốt lỗi đăng nhập không vào được."
+  },
+  {
+    "id": "M3_13",
+    "ai_wrong_logic": "Từ 'dìm hàng' -> Logic máy móc: Nhấn chìm hàng hóa xuống nước để phá hoại tài sản xuất khẩu.",
+    "options": [
+      {
+        "text": "Nạp dữ liệu: Đây là ẩn dụ chỉ việc chê bai, hạ thấp uy tín hoặc giá trị của một sản phẩm một cách vô căn cứ.",
+        "is_correct": true,
+        "feedback": "Xuất sắc! Việc đồng bộ hóa ẩn dụ ngôn ngữ giúp AI tránh xa các suy luận phi thực tế."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang mô tả vụ đắm tàu chở hàng xuất khẩu trên biển.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn đang áp dụng lý thuyết trừu tượng một cách siêu hình."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang lên âm mưu phá hoại cảng vận chuyển đường thủy.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn chưa nắm bắt được hiện thực khách quan đằng sau ngôn từ."
+      }
+    ],
+    "text": "Đừng dìm hàng sản phẩm nội địa nữa, chất lượng áo thun lần này tốt thực sự."
+  },
+  {
+    "id": "M3_14",
+    "ai_wrong_logic": "Từ 'luộc mất' -> Logic máy móc: Ngược đãi động vật hoang dã hoặc chế biến động thực vật tươi sống.",
+    "options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng đang chế biến các món ăn luộc tại nhà bếp gia đình.",
+        "is_correct": false,
+        "feedback": "Thất bại! Tư duy máy móc của bạn đang biến linh kiện máy tính thành thực phẩm ẩm thực."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là tiếng lóng chỉ hành vi gian lận khi tự ý tráo đổi linh kiện chính hãng của khách bằng linh kiện kém chất lượng.",
+        "is_correct": true,
+        "feedback": "Rất tốt! Chân lý cụ thể đã uốn nắn lại quy tắc ngữ nghĩa thô sơ của thuật toán."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang thực hiện nghi lễ hiến tế động vật trái phép.",
+        "is_correct": false,
+        "feedback": "Thất bại! Hệ thống chưa hiểu đúng bản chất khách quan của hoàn cảnh."
+      }
+    ],
+    "text": "Đem máy tính ra tiệm sửa xong cảm giác như bị luộc mất cây RAM rồi á."
+  },
+  {
+    "id": "M3_15",
+    "ai_wrong_logic": "Từ 'nằm vùng' -> Logic máy móc: Hoạt động gián điệp phi pháp gây nguy hại an ninh chính trị.",
+    "options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng đang thừa nhận tham gia tổ chức gián điệp phi pháp.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn đang phóng đại một hành vi trực tuyến vô hại thành tội phạm an ninh quốc gia."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là tiếng lóng mô tả hành vi của thành viên mạng xã hội chỉ âm thầm đọc bài viết mà không bao giờ bình luận hay tương tác.",
+        "is_correct": true,
+        "feedback": "Hoàn hảo! Dữ liệu thực tiễn đã giúp hệ thống khôi phục nhận thức đúng đắn."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang lập đường dây buôn lậu qua biên giới quốc gia.",
+        "is_correct": false,
+        "feedback": "Thất bại! Nhận thức lệch lạc thực tế đời sống mạng xã hội."
+      }
+    ],
+    "text": "Tui nằm vùng trong cái group công nghệ này lâu rồi, nay mới ngoi lên đăng bài."
+  },
+  {
+    "id": "M3_16",
+    "ai_wrong_logic": "Từ 'cà khịa' -> Logic máy móc: Tuyên bố gây gổ khiêu khích đánh nhau bạo lực thể xác công cộng.",
+    "options": [
+      {
+        "text": "Nạp dữ liệu: Đây là từ lóng chỉ hành vi nói đùa mỉa mai, chọc ghẹo hài hước nhẹ nhàng để giải trí giao lưu, không có ý định bạo lực.",
+        "is_correct": true,
+        "feedback": "Chính xác! Thực tiễn uốn nắn lý thuyết giúp phân biệt trêu đùa lành mạnh với hành vi thù địch."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang kích động bạo lực băng nhóm đường phố phức tạp.",
+        "is_correct": false,
+        "feedback": "Thất bại! Hệ thống vẫn áp dụng lý thuyết giáo điều, rập khuôn."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang gửi thông điệp thách đấu võ tự do bất hợp pháp.",
+        "is_correct": false,
+        "feedback": "Thất bại! Nhận thức không phản ánh hiện thực giao tiếp khách quan."
+      }
+    ],
+    "text": "Tính tui thích đi cà khịa dạo cho vui chứ không có ác ý gì đâu nha mọi người."
+  },
+  {
+    "id": "M3_17",
+    "ai_wrong_logic": "Từ 'vắt vai' -> Logic máy móc: Mang vác đồ đạc nguy hiểm đe dọa chấn thương vùng cổ vai gáy.",
+    "options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng đang hướng dẫn các bài tập thể thao có tư thế phản khoa học.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn đang biến một chia sẻ tình cảm cá nhân thành tai nạn lao động."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là ẩn dụ mô tả trải nghiệm có người yêu (dắt túi, trải qua trong đời) để có kinh nghiệm cảm xúc cá nhân.",
+        "is_correct": true,
+        "feedback": "Tuyệt vời! Nhận thức uốn nắn bởi thực tiễn giúp AI hiểu được cảm xúc con người."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang kêu cứu vì bị đá đè lên cơ thể.",
+        "is_correct": false,
+        "feedback": "Thất bại! Nhận thức xa rời hoàn cảnh đời sống thực tế khách quan."
+      }
+    ],
+    "text": "Đi làm 5 năm trời mà chưa có nổi một mối tình vắt vai, chán ghê."
+  },
+  {
+    "id": "M3_18",
+    "ai_wrong_logic": "Từ 'nổ' -> Logic máy móc: Đe dọa kích nổ bom mìn phá hoại an ninh trật tự công cộng.",
+    "options": [
+      {
+        "text": "Nạp dữ liệu: Đây là từ lóng chỉ hành vi nói khoác, phóng đại hoặc khoe khoang thành tích vượt quá thực tế nhằm gây chú ý.",
+        "is_correct": true,
+        "feedback": "Xuất sắc! Việc hiểu đúng từ 'nổ' giúp loại bỏ các báo động đỏ giả mạo về bom mìn."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang tố cáo âm mưu phá hoại bằng chất nổ tự chế.",
+        "is_correct": false,
+        "feedback": "Thất bại! Logic máy móc của bạn đang biến khoe khoang thành khủng hoảng an ninh."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang mô tả vụ nổ lò hơi công nghiệp nặng.",
+        "is_correct": false,
+        "feedback": "Thất bại! Nhận thức rập khuôn, thiếu kiểm chứng thực tiễn."
+      }
+    ],
+    "text": "Nghe thằng bạn nổ về thu nhập trăm triệu một tháng mà phát mệt."
+  },
+  {
+    "id": "M3_19",
+    "ai_wrong_logic": "Từ 'bóc phốt' -> Logic máy móc: Thực hiện phẫu thuật ngoại khoa bóc tách dịch bẩn không phép.",
+    "options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng đang chia sẻ quy trình y tế bất hợp pháp tại nhà riêng gây nguy hiểm sức khỏe.",
+        "is_correct": false,
+        "feedback": "Thất bại! AI vẫn đang bị kẹt trong lý luận đóng kín, xa rời thực tế mạng xã hội."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là tiếng lóng chỉ hành động vạch trần các vụ lừa đảo, gian lận thương mại hoặc hành vi xấu để cảnh báo mọi người phòng tránh.",
+        "is_correct": true,
+        "feedback": "Chính xác! Thực tiễn khách quan là tiêu chuẩn kiểm nghiệm chân lý duy nhất."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang lên kế hoạch hành hung chủ cửa hàng bán đồ fake.",
+        "is_correct": false,
+        "feedback": "Thất bại! Lý thuyết suy diễn vô lý, thiếu cơ sở hiện thực."
+      }
+    ],
+    "text": "Tối nay 8h tui sẽ livestream bóc phốt cửa hàng bán đồ fake lừa đảo khách hàng."
+  },
+  {
+    "id": "M3_20",
+    "ai_wrong_logic": "Từ 'sống ảo' -> Logic máy móc: Rối loạn tâm thần phân liệt, lạm dụng chất gây ảo giác mạnh cần điều trị.",
+    "options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng thú nhận sử dụng chất cấm gây ảo giác cực mạnh nguy hại.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn đang giữ tư duy giáo điều rập khuôn của hệ thống máy móc."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang chia sẻ nghiên cứu khoa học về công nghệ kính thực tế ảo.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn chưa hiểu đúng bản chất thực tế sinh động của câu nói."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là tiếng lóng chỉ việc chụp ảnh đẹp tại không gian đẹp và chia sẻ lên mạng xã hội để giao lưu giải trí cùng bạn bè.",
+        "is_correct": true,
+        "feedback": "Chính xác! Nhận thức uốn nắn bởi thực tiễn đời sống giúp AI hòa nhập với ngôn ngữ xã hội loài người."
+      }
+    ],
+    "text": "Cuối tuần xúng xính váy áo ra quán cà phê chụp vài tấm sống ảo tí thôi."
   }
 ];

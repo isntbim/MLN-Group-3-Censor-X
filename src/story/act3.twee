@@ -20,7 +20,7 @@
 
 :: Act3_Review
 <<set _c to $shuffledAct3[$act3Turn]>>\
-<<= setup.renderTurnDots($act3Turn, 4)>>
+<<= setup.renderTurnDots($act3Turn, 10)>>
 
 <div class="debug-console">
   <div class="debug-header">context_injector.exe — RLHF Patch v1.0</div>
@@ -48,10 +48,10 @@
       <<set _c to $shuffledAct3[$act3Turn]>>
       <<set _opt to _c.options[_i]>>
       <<if _opt.is_correct>>
-        <<set $practiceMeter to $practiceMeter + 25>>
+        <<set $practiceMeter to $practiceMeter + 10>>
         <<set $lastFeedback to _opt.feedback>>
         <<set $lastFeedbackType to "success">>
-        <<set $lastDelta to "THỰC TIỄN +25%">>
+        <<set $lastDelta to "THỰC TIỄN +10%">>
         <<set $act3Turn to $act3Turn + 1>>
         <<goto "Act3_Correct">>
       <<else>>

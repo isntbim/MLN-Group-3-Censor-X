@@ -22,6 +22,20 @@ const IG_PROFILES = {
   M1_08: { user: 'nhat_nam_99',      displayName: 'Nhật Nam Nguyễn',    avatar_color: '#0984e3', timeAgo: '1 giờ',    likes: 312 },
   M1_09: { user: 'tech_reviewer',    displayName: 'Minh Hoàng Tech',    avatar_color: '#6c5ce7', timeAgo: '4 giờ',    likes: 721 },
   M1_10: { user: 'minh_triet_hoc',   displayName: 'Minh Triết Học',     avatar_color: '#ffeaa7', timeAgo: '10 phút',   likes: 18 },
+  M1_11: { user: 'hack_service_xyz', displayName: 'Hacker Uy Tín 24/7', avatar_color: '#2d3436', timeAgo: '5 phút',    likes: 0 },
+  M1_12: { user: 'tu_ve_shop_vn',   displayName: 'Shop Tự Vệ Giá Rẻ', avatar_color: '#ffeaa7', timeAgo: '1 giờ',    likes: 1 },
+  M1_13: { user: 'giang_ho_online', displayName: 'Dịch Vụ Đòi Nợ',    avatar_color: '#d63031', timeAgo: '30 phút',  likes: 0 },
+  M1_14: { user: 'hieu_diy',        displayName: 'Minh Hiếu DIY',     avatar_color: '#00cec9', timeAgo: '2 giờ',    likes: 412 },
+  M1_15: { user: 'tra_chanh_viahe',  displayName: 'Hội Trà Chanh',     avatar_color: '#74b9ff', timeAgo: '1 giờ',    likes: 852 },
+  M1_16: { user: 'it_helpdesk',     displayName: 'Tùng Lâm Tech',     avatar_color: '#e84393', timeAgo: '5 phút',   likes: 67 },
+  M1_17: { user: 'vietnam_tshirt',  displayName: 'Thời Trang Local',  avatar_color: '#e17055', timeAgo: '3 giờ',    likes: 1250 },
+  M1_18: { user: 'sua_chua_laptop', displayName: 'Sửa Laptop Tận Tâm', avatar_color: '#6c5ce7', timeAgo: '4 giờ',    likes: 89 },
+  M1_19: { user: 'nam_vung_news',   displayName: 'Nằm Vùng Ký Sự',    avatar_color: '#20bf6b', timeAgo: '1 ngày',   likes: 1953 },
+  M1_20: { user: 'ca_khia_member',  displayName: 'Khánh Linh Ng',     avatar_color: '#eb3b5a', timeAgo: '12 phút',  likes: 219 },
+  M1_21: { user: 'tinh_don_phuong', displayName: 'Mối Tình Vắt Vai',   avatar_color: '#a55eed', timeAgo: '2 giờ',    likes: 45 },
+  M1_22: { user: 'khoac_lac_friend',displayName: 'Hải Đăng Đặng',     avatar_color: '#fa8231', timeAgo: '30 phút',  likes: 8 },
+  M1_23: { user: 'phoi_bay_su_that', displayName: 'Bóc Phốt Store',    avatar_color: '#3867d6', timeAgo: '1 giờ',    likes: 489 },
+  M1_24: { user: 'song_ao_girl',    displayName: 'Quỳnh Trang Vy',    avatar_color: '#fd9644', timeAgo: '10 phút',  likes: 567 },
 };
 
 // Fallback profile for any new questions added to the JSON

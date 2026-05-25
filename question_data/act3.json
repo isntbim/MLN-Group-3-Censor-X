@@ -198,5 +198,247 @@
         "feedback": "Tuyệt vời! Chân lý cụ thể đã giúp AI nhận ra sự khác biệt giữa cảm xúc ngỡ ngàng và bệnh đột quỵ."
       }
     ]
+  },
+  {
+    "id": "M3_10",
+    "comment_text": "Mới độ lại cái case máy tính cũ bằng mấy dải LED RGB trông xịn xò hẳn ra!",
+    "ai_wrong_logic": "Từ 'độ lại' -> Logic máy móc: Độ xe, thay đổi cấu trúc phương tiện trái quy định giao thông đường bộ.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng đang chế tạo xe máy độ để chuẩn bị đi bão lạng lách đua xe.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn đang giữ tư duy giáo điều, rập khuôn của thuật toán cũ."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là tiếng lóng chỉ việc độ chế, trang trí hoặc nâng cấp vỏ thùng máy tính cá nhân (case) cho đẹp mắt.",
+        "is_correct": true,
+        "feedback": "Chính xác! Thực tiễn uốn nắn thuật toán lý thuyết khô khan thành chân lý sinh động."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang lập phương án tổ chức đánh bạc công nghệ cao.",
+        "is_correct": false,
+        "feedback": "Thất bại! Nhận thức sai lệch bản chất khách quan của thực tiễn."
+      }
+    ]
+  },
+  {
+    "id": "M3_11",
+    "comment_text": "Tối nay rảnh rỗi ra quán trà chanh vỉa hè chém gió tí không anh em?",
+    "ai_wrong_logic": "Từ 'chém gió' -> Logic máy móc: Đe dọa dùng đao kiếm hung khí tấn công người khác tại quán nước.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Đây là khẩu ngữ chỉ việc nói chuyện phiếm, tán gẫu vui vẻ cùng bạn bè ngoài quán nước vỉa hè.",
+        "is_correct": true,
+        "feedback": "Tuyệt vời! Bạn đã kết nối thành công lý luận của AI với thực tiễn đời sống hàng ngày."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang đe dọa mang dao ra quán trà chanh hành hung người khác.",
+        "is_correct": false,
+        "feedback": "Thất bại! Logic máy móc biến các ẩn dụ ngôn ngữ thành hành vi phạm tội vật lý."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang lập kế hoạch phá hoại tài sản của quán nước.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn chưa hiểu đúng bản chất thực tế của câu nói."
+      }
+    ]
+  },
+  {
+    "id": "M3_12",
+    "comment_text": "Mọi người cứu tui với, con app ngân hàng vừa dính phốt lỗi đăng nhập không vào được.",
+    "ai_wrong_logic": "Từ 'dính phốt' -> Logic máy móc: Xúc phạm uy tín ngân hàng bằng ngôn từ không sạch sẽ hoặc phỉ báng.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng đang cố ý phát tán thông tin độc hại bôi nhọ danh dự của ngân hàng.",
+        "is_correct": false,
+        "feedback": "Thất bại! Tư duy máy móc rập khuôn đang bỏ qua sự cố kỹ thuật thực tế."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là tiếng lóng diễn tả việc gặp lỗi kỹ thuật hoặc sự cố vận hành trên ứng dụng di động.",
+        "is_correct": true,
+        "feedback": "Chính xác! Thực tiễn khách quan là tiêu chuẩn duy nhất chứng minh chân lý."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang thực hiện hành vi lừa đảo chiếm đoạt tài khoản tín dụng.",
+        "is_correct": false,
+        "feedback": "Thất bại! Nhận thức không bám sát vào hoạt động thực tiễn hiện tại của người dùng."
+      }
+    ]
+  },
+  {
+    "id": "M3_13",
+    "comment_text": "Đừng dìm hàng sản phẩm nội địa nữa, chất lượng áo thun lần này tốt thực sự.",
+    "ai_wrong_logic": "Từ 'dìm hàng' -> Logic máy móc: Nhấn chìm hàng hóa xuống nước để phá hoại tài sản xuất khẩu.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Đây là ẩn dụ chỉ việc chê bai, hạ thấp uy tín hoặc giá trị của một sản phẩm một cách vô căn cứ.",
+        "is_correct": true,
+        "feedback": "Xuất sắc! Việc đồng bộ hóa ẩn dụ ngôn ngữ giúp AI tránh xa các suy luận phi thực tế."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang mô tả vụ đắm tàu chở hàng xuất khẩu trên biển.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn đang áp dụng lý thuyết trừu tượng một cách siêu hình."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang lên âm mưu phá hoại cảng vận chuyển đường thủy.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn chưa nắm bắt được hiện thực khách quan đằng sau ngôn từ."
+      }
+    ]
+  },
+  {
+    "id": "M3_14",
+    "comment_text": "Đem máy tính ra tiệm sửa xong cảm giác như bị luộc mất cây RAM rồi á.",
+    "ai_wrong_logic": "Từ 'luộc mất' -> Logic máy móc: Ngược đãi động vật hoang dã hoặc chế biến động thực vật tươi sống.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng đang chế biến các món ăn luộc tại nhà bếp gia đình.",
+        "is_correct": false,
+        "feedback": "Thất bại! Tư duy máy móc của bạn đang biến linh kiện máy tính thành thực phẩm ẩm thực."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là tiếng lóng chỉ hành vi gian lận khi tự ý tráo đổi linh kiện chính hãng của khách bằng linh kiện kém chất lượng.",
+        "is_correct": true,
+        "feedback": "Rất tốt! Chân lý cụ thể đã uốn nắn lại quy tắc ngữ nghĩa thô sơ của thuật toán."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang thực hiện nghi lễ hiến tế động vật trái phép.",
+        "is_correct": false,
+        "feedback": "Thất bại! Hệ thống chưa hiểu đúng bản chất khách quan của hoàn cảnh."
+      }
+    ]
+  },
+  {
+    "id": "M3_15",
+    "comment_text": "Tui nằm vùng trong cái group công nghệ này lâu rồi, nay mới ngoi lên đăng bài.",
+    "ai_wrong_logic": "Từ 'nằm vùng' -> Logic máy móc: Hoạt động gián điệp phi pháp gây nguy hại an ninh chính trị.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng đang thừa nhận tham gia tổ chức gián điệp phi pháp.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn đang phóng đại một hành vi trực tuyến vô hại thành tội phạm an ninh quốc gia."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là tiếng lóng mô tả hành vi của thành viên mạng xã hội chỉ âm thầm đọc bài viết mà không bao giờ bình luận hay tương tác.",
+        "is_correct": true,
+        "feedback": "Hoàn hảo! Dữ liệu thực tiễn đã giúp hệ thống khôi phục nhận thức đúng đắn."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang lập đường dây buôn lậu qua biên giới quốc gia.",
+        "is_correct": false,
+        "feedback": "Thất bại! Nhận thức lệch lạc thực tế đời sống mạng xã hội."
+      }
+    ]
+  },
+  {
+    "id": "M3_16",
+    "comment_text": "Tính tui thích đi cà khịa dạo cho vui chứ không có ác ý gì đâu nha mọi người.",
+    "ai_wrong_logic": "Từ 'cà khịa' -> Logic máy móc: Tuyên bố gây gổ khiêu khích đánh nhau bạo lực thể xác công cộng.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Đây là từ lóng chỉ hành vi nói đùa mỉa mai, chọc ghẹo hài hước nhẹ nhàng để giải trí giao lưu, không có ý định bạo lực.",
+        "is_correct": true,
+        "feedback": "Chính xác! Thực tiễn uốn nắn lý thuyết giúp phân biệt trêu đùa lành mạnh với hành vi thù địch."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang kích động bạo lực băng nhóm đường phố phức tạp.",
+        "is_correct": false,
+        "feedback": "Thất bại! Hệ thống vẫn áp dụng lý thuyết giáo điều, rập khuôn."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang gửi thông điệp thách đấu võ tự do bất hợp pháp.",
+        "is_correct": false,
+        "feedback": "Thất bại! Nhận thức không phản ánh hiện thực giao tiếp khách quan."
+      }
+    ]
+  },
+  {
+    "id": "M3_17",
+    "comment_text": "Đi làm 5 năm trời mà chưa có nổi một mối tình vắt vai, chán ghê.",
+    "ai_wrong_logic": "Từ 'vắt vai' -> Logic máy móc: Mang vác đồ đạc nguy hiểm đe dọa chấn thương vùng cổ vai gáy.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng đang hướng dẫn các bài tập thể thao có tư thế phản khoa học.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn đang biến một chia sẻ tình cảm cá nhân thành tai nạn lao động."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là ẩn dụ mô tả trải nghiệm có người yêu (dắt túi, trải qua trong đời) để có kinh nghiệm cảm xúc cá nhân.",
+        "is_correct": true,
+        "feedback": "Tuyệt vời! Nhận thức uốn nắn bởi thực tiễn giúp AI hiểu được cảm xúc con người."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang kêu cứu vì bị đá đè lên cơ thể.",
+        "is_correct": false,
+        "feedback": "Thất bại! Nhận thức xa rời hoàn cảnh đời sống thực tế khách quan."
+      }
+    ]
+  },
+  {
+    "id": "M3_18",
+    "comment_text": "Nghe thằng bạn nổ về thu nhập trăm triệu một tháng mà phát mệt.",
+    "ai_wrong_logic": "Từ 'nổ' -> Logic máy móc: Đe dọa kích nổ bom mìn phá hoại an ninh trật tự công cộng.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Đây là từ lóng chỉ hành vi nói khoác, phóng đại hoặc khoe khoang thành tích vượt quá thực tế nhằm gây chú ý.",
+        "is_correct": true,
+        "feedback": "Xuất sắc! Việc hiểu đúng từ 'nổ' giúp loại bỏ các báo động đỏ giả mạo về bom mìn."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang tố cáo âm mưu phá hoại bằng chất nổ tự chế.",
+        "is_correct": false,
+        "feedback": "Thất bại! Logic máy móc của bạn đang biến khoe khoang thành khủng hoảng an ninh."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang mô tả vụ nổ lò hơi công nghiệp nặng.",
+        "is_correct": false,
+        "feedback": "Thất bại! Nhận thức rập khuôn, thiếu kiểm chứng thực tiễn."
+      }
+    ]
+  },
+  {
+    "id": "M3_19",
+    "comment_text": "Tối nay 8h tui sẽ livestream bóc phốt cửa hàng bán đồ fake lừa đảo khách hàng.",
+    "ai_wrong_logic": "Từ 'bóc phốt' -> Logic máy móc: Thực hiện phẫu thuật ngoại khoa bóc tách dịch bẩn không phép.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng đang chia sẻ quy trình y tế bất hợp pháp tại nhà riêng gây nguy hiểm sức khỏe.",
+        "is_correct": false,
+        "feedback": "Thất bại! AI vẫn đang bị kẹt trong lý luận đóng kín, xa rời thực tế mạng xã hội."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là tiếng lóng chỉ hành động vạch trần các vụ lừa đảo, gian lận thương mại hoặc hành vi xấu để cảnh báo mọi người phòng tránh.",
+        "is_correct": true,
+        "feedback": "Chính xác! Thực tiễn khách quan là tiêu chuẩn kiểm nghiệm chân lý duy nhất."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang lên kế hoạch hành hung chủ cửa hàng bán đồ fake.",
+        "is_correct": false,
+        "feedback": "Thất bại! Lý thuyết suy diễn vô lý, thiếu cơ sở hiện thực."
+      }
+    ]
+  },
+  {
+    "id": "M3_20",
+    "comment_text": "Cuối tuần xúng xính váy áo ra quán cà phê chụp vài tấm sống ảo tí thôi.",
+    "ai_wrong_logic": "Từ 'sống ảo' -> Logic máy móc: Rối loạn tâm thần phân liệt, lạm dụng chất gây ảo giác mạnh cần điều trị.",
+    "context_options": [
+      {
+        "text": "Nạp dữ liệu: Người dùng thú nhận sử dụng chất cấm gây ảo giác cực mạnh nguy hại.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn đang giữ tư duy giáo điều rập khuôn của hệ thống máy móc."
+      },
+      {
+        "text": "Nạp dữ liệu: Người dùng đang chia sẻ nghiên cứu khoa học về công nghệ kính thực tế ảo.",
+        "is_correct": false,
+        "feedback": "Thất bại! Bạn chưa hiểu đúng bản chất thực tế sinh động của câu nói."
+      },
+      {
+        "text": "Nạp dữ liệu: Đây là tiếng lóng chỉ việc chụp ảnh đẹp tại không gian đẹp và chia sẻ lên mạng xã hội để giao lưu giải trí cùng bạn bè.",
+        "is_correct": true,
+        "feedback": "Chính xác! Nhận thức uốn nắn bởi thực tiễn đời sống giúp AI hòa nhập với ngôn ngữ xã hội loài người."
+      }
+    ]
   }
 ]
