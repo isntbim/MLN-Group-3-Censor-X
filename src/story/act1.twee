@@ -25,7 +25,7 @@
 
 :: Act1_Review
 <<set _c to $shuffledAct1[$turn]>>\
-<<= setup.renderTurnDots($turn, 10)>>
+<<= setup.renderTurnDots($turn, 7)>>
 
 <div class="review-layout">
 <div class="review-left">
@@ -101,7 +101,7 @@
 <div class="panel" style="margin-top:12px">
   <div class="panel-header">Trạng thái hệ thống</div>
   <div style="font-family:var(--font-mono);font-size:0.82rem;color:var(--text-secondary)">
-    Điểm Tín nhiệm: <strong style="color:var(--accent-gold)"><<= $publicTrust>></strong>/100 &nbsp;|&nbsp; Lượt đã xử lý: <strong style="color:var(--accent-gold)"><<= $turn>></strong>/10
+    Điểm Tín nhiệm: <strong style="color:var(--accent-gold)"><<= $publicTrust>></strong>/100 &nbsp;|&nbsp; Lượt đã xử lý: <strong style="color:var(--accent-gold)"><<= $turn>></strong>/7
   </div>
 </div>
 
@@ -119,7 +119,7 @@
   <<link '<span class="btn btn-danger">HỆ THỐNG SỤP ĐỔ →</span>'>>
     <<goto "GameOver">>
   <</link>>\
-<<elseif $turn gte 10>>\
+<<elseif $turn gte 7>>\
   <<link '<span class="btn btn-primary">TIẾP TỤC →</span>'>>
     <<if $publicTrust lt 40>>
       <<goto "Act2_Crisis">>

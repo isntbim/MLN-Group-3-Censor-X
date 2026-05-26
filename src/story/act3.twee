@@ -9,7 +9,7 @@
 <div class="panel">
   <div class="panel-header" style="color:var(--accent-green)">Hướng dẫn cơ chế RLHF</div>
   <div class="sys-msg ok">Mỗi câu bình luận sẽ hiện lại kèm phân tích lỗi của CENSOR-X. Bạn cần chọn đúng <strong>ngữ cảnh thực tiễn</strong> từ 3 phương án để sửa lỗi thuật toán.</div>
-  <div class="sys-msg info" style="margin-top:8px">Mỗi lần nạp dữ liệu thành công → Thanh Tích lũy Thực tiễn tăng +25%. Khi đạt 100% → Hệ thống khôi phục hoàn toàn.</div>
+  <div class="sys-msg info" style="margin-top:8px">Mỗi lần nạp dữ liệu thành công → Thanh Tích lũy Thực tiễn tăng +20%. Khi đạt 100% (sau 5 câu) → Hệ thống khôi phục hoàn toàn.</div>
 </div>
 
 <div style="text-align:center">
@@ -20,7 +20,7 @@
 
 :: Act3_Review
 <<set _c to $shuffledAct3[$act3Turn]>>\
-<<= setup.renderTurnDots($act3Turn, 10)>>
+<<= setup.renderTurnDots($act3Turn, 5)>>
 
 <div class="debug-console">
   <div class="debug-header">context_injector.exe — RLHF Patch v1.0</div>
@@ -48,10 +48,10 @@
       <<set _c to $shuffledAct3[$act3Turn]>>
       <<set _opt to _c.options[_i]>>
       <<if _opt.is_correct>>
-        <<set $practiceMeter to $practiceMeter + 10>>
+        <<set $practiceMeter to $practiceMeter + 20>>
         <<set $lastFeedback to _opt.feedback>>
         <<set $lastFeedbackType to "success">>
-        <<set $lastDelta to "THỰC TIỄN +10%">>
+        <<set $lastDelta to "THỰC TIỄN +20%">>
         <<set $act3Turn to $act3Turn + 1>>
         <<goto "Act3_Correct">>
       <<else>>
